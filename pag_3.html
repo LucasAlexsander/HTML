@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viweport" content="widht=device-width, initial-scale=1.0">
+
+        <title>Resumos de HTML / CSS pag 3</title>
+
+        <!-- Load external CSS styles -->
+        <!--<link rel="stylesheet" href="C:\Users\INSS\Documents\VS Code\HTML-CSS-Projetos\Resumo_HTML\styles.css">-->
+        <link rel="stylesheet" href="styles.css">
+        <link ref="stylesheet" href="\Imagens">
+        <!--<link ref="stylesheet" href="D:\Estudos facul\HTML e CSS\Imagens">-->
+
+    </head>
+<body style="background-color: lightgrey">
+
+    <hr>
+    <!--Menu-->
+    <ul class="menu">
+        <a href="home.html"><li class="menu_1">Home</li></a>
+        <a href="index.html"><li class="menu_1">Primeira Página</li></a>
+        <a href="pag_2.html"><li class="menu_1">Segunda Página</li></a>
+        <a href="pag_3.html"><li class="menu_1">Terceira Página</li></a>
+        <a href="pag_4.html"><li class="menu_1">Quarta Página</li></a>
+        <a href="pag_5.html"><li class="menu_1">Quinta Página</li></a>
+        <a href="pag_6.html"><li class="menu_1">Sexta Página</li></a>
+        <a href=" https://www.maujor.com/" target="_blank"><li class="menu_1">Site de CSS</li></a>
+    </ul>
+
+
+
+    <hr>
+
+
+    <h1> Seja Muito Bem-Vindo a Página 3</h1>
+
+
+    <h2> <ins> Sumário da Página 3</ins></h2>
+    <ul>
+        <a href="#HTML_img-sin"> <li>HTML Imagens Sintaxe</li></a>
+        <a href="#Resumo_img"> <li>Resumo de Imagem</li></a>
+        <a href="#HTML_maps"> <li>Image Maps</li>  </a>
+        <a href="#img_tag"> <li>Image Tag</li> </a>
+        <a href="#tabela_HTML"> <li>Tabela HTML</li></a>
+        <a href="#HTML_bordas"><li>HTML - Tipos de Bordas para Tabela</li> </a>
+        <a href="#HTML_size"> <li> HTML - Tamanho das tabelas</li></a>
+        <a href="#HTML_cabeçalho"> <li>HTML - Cabeçalho</li></a>
+        <a href="#HTML_preenchimento"> <li>Preenchimento e espaçamento da tabela</li></a>
+        <a href="#HTML_span"> <li>Colspan & Rowpan</li> </a>
+        <a href="#table_style"> <li>Estilo da tabela</li></a>
+        <a href="#HTML_colgroup"> <li>HTML - Colgroup</li></a> 
+    </ul>
+
+
+
+
+
+    <!--Quabra de linha e um risco na hortizontal-->
+    <br><br> <hr>
+
+
+    <h2 id="HTML_img-sin"> HTML Imagens Sintaxe </h2>
+    <p>Para adcionarmos uma imagem ao nosso site precisamos usar o atributo <b><q>< img ></q></b>, ele fará com que o programa aceite imagens, logo depois,
+    usaremos <b><q>src</q> (source)</b> que nada mais é que o path (caminho) do arquivo, dentro do atributo <q>< img ></q>, feito isso você já terá uma imagem.<br>
+    Caso você queria dar um título para imagem, precisamos colocar um <b><q>title</q></b> logo em seguida do <b><q>src</q></b>.<br>
+    Usamos o <b><q>alt</q></b> caso você esteja usando um link do google, pois caso o link é perdido ou pare de funcionar o browser pode procurar uma parecida para substituir, mas sempre é recomedavem você exportar a imagem para o site.<br>
+    Podemos mexer no tamanho da imagem usando <b><q>wight:'num_px'</q></b> para <b>largura</b> e <b><q>height:'num_px'</q></b> para <b>altura</b>.<br>
+    Se você tiver as imagens em outra pasta você faz a mesma coisa que o link, coloca o path (caminho) dentro do <b><q>src</q></b>.<br>
+    Para imagens em outro site, você coloca a URL completa no <b><q>src</q></b> e no <b><q>alt:</q></b> você coloca o dominio. <br>
+    Tudo que foi dito funciona também para imagens animadas.<br>
+    <strong>Imagens com links</strong> você vai usar o atributo <q>< a ></q> e colocará o link no <q>href</q> e o arquivo no <q>src</q>.<br>
+    Por último mas não menos importante, o <b><q>float</q></b>, ele serve para colocar a imagem a direita ou a esquerda do texto.<br></p>
+
+
+    <h2 id="Resumo_img">Resumo de Imagem</h2>
+    <img src="Imagens\Resumo_imagens.png" title="Resumo do contéudo"><br>
+    <hr>
+
+
+
+    <h2 id="HTML_maps"> HTML Image Maps </h2>
+    <p>A tag <b>< map ></b> defini um mapa da imagem, podendo clicar em determinadas áreas. E as áeras são definidas através da tag <b>< area ></b>.<br>
+    Exemplo: <br>
+    <pre class="formatacao_cursive">       < img src="workplace.jpg" alt="Workplace" usemap="#workmap" >
+
+        < map name="workmap" >
+            < area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm" >
+            < area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm" >
+            < area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm" >
+        < /map ></pre>
+    
+    A imagem é importada através da <q>< img ></q>, mas o que muda este tipo de imagem para as outras é o atributo <b>usemap</b>.<br>
+    O <b> usempa</b> começa com hash tag ('#') e logo em seguida vem o nome do arquivo, isso é usado para criar um relacionamento entre a imagem e o mapa.<br></p>
+
+    <h3> Criando um Image Map </h3>
+    <p>Então, adicionamos a tag <b>< map ></b>, usado para criar um <i>Image Map</i>, juntamente usamos o atributo <q> nome</q>, que tem praticamente a mesma função que o <q>usemap</q>.<br></p>
+    <h3> Criando as Áreas </h3>
+    <p>Para colocarmos a função de clicar em determinada área da imagem, vamos colocar a tag <q>< area ></q>.<br></p>
+    <h3> Corpo </h3>
+    Shape="NOME"<br>
+    Você pode definir a área de várias formas, sendo eles, redonda poligonal, retangular, ou o padrão.<br>
+    rect - defines a rectangular region, x-axis and y-axis; <br>
+    circle - defines a circular region, you put the locale and radius of the circle;<br>
+    poly - defines a polygonal region, x-axis and y-axis but so must;<br>
+    default - defines the entire region <br>
+
+    <h3> JavaScript and Image Map </h3>
+    Exemplo:<br>
+    <pre class="formatacao_cursive">
+                < map name="workmap">
+                    < area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()" >
+                < /map >
+
+                < script >
+                    function myFunction() {
+                        alert("You clicked the coffee cup!");
+                }
+                < /script >
+    </pre>
+    <hr>
+    <h2 id="img_tag"> Image Tag </h2>
+    <img src="Imagens\img_tag.png" title="Image Tag">
+    <br><hr>
+
+    <h2> Picture tag </h2>
+    O <q>< picture ></q> dá ao desenvolvedor mais flexibilidade ao importar determinada imagem, pois você consegue definir para quais dispositivos, com base na sua tela, irá aparecer determinada imagem.<br>
+    <q>< picture ></q> é usado juntamente com o elemento <q>< source ></q> para diferentes imagens junto com o <q>srcset</q> que definira qual imagem irá aparecer com base na <q>media</q>.
+    <q>Media</q> será a condição para que a imagem apareceça, escolhendo o seu tamanho mínimo.<br>
+    Exemplo:<br><pre class="formatacao_cursive">
+                < picture >
+                < source media="(min-width: 650px)" srcset="img_food.jpg" >
+                < source media="(min-width: 465px)" srcset="img_car.jpg" >
+                < img src="img_girl.jpg" >
+                < /picture >
+    </pre>
+    <hr>
+
+
+    <!--TABELA-->
+    <h2 id="tabela_HTML">Tabela HTML </h2>
+
+    <h3>Definição</h3>
+    <p>
+        Uma tabela em HTML consistem em células que ficam dentro de colunas e linhas. E para usar precisamos inserir o <b>< table ></b>.
+    </p>
+    <h3>Uma tabela simples:</h3>
+    <img src="Imagens\Table_simple.png" alt="Tabela simples">
+
+    <p>
+        Cada célula da tabela é definida pelas tags <mark>< td ></mark> e <mark>< /td ></mark> ("td" significa dados da tabela - table data), tudo entre essa tag é o conteúdo da célula da tabela.<br>
+        Os elementos da tabela de dados, pode ser elementos como, textos, imagens, listas e outras tabelas, etc.
+    </p>
+
+    <h3>Linhas da tabela</h3>
+        <p>
+            Cada linha da tabela começa com <mark>< tr ></mark> e termina com </mark> ("tr" representa a linha da tabela). <br>
+        </p>
+        <h4>Exemplo:</h4>
+        <img src="Imagens\Table_linhas.png" alt="Resumo das linhas da tabela">
+        <br>
+        <p>
+            Você pode ter o número que quiser de linhas em uma tabela, só certifique-se de que o número de células é o mesmo em cada linhas.<br>
+            <strong>OBS:</strong> Há momentos em que uma linha pode ter menos ou mais células do que outra.
+        </p>
+
+    <h3>Cabeçalhos de Tabela</h3>
+    <p>
+        Se você deseja que suas células sejam cabeçalhos, neste caso ira usar <b>< th ></b> ao invés de <b>< td ></b>
+    </p>
+    <h3>Dicas:</h3>
+    <p>•Para fazermos uma coluna parecer duas vezes com o mesmo nome, ou dado, basta colocar <b> colspan="quantidade_de_vezes"</b>.<br>
+        •Para fazermos uma linha aparecer duas vezes ou mais com o mesmo dado, basta colocar <b> rowspan="quantidade_de_vezes"</b>.<br>
+    
+    </p>
+
+
+    <table>
+        <caption class="formatacao_times" style="font-weight: bold">Resumo da Tabela </caption>
+        <tr>
+            <th> Tag </th>
+            <th>Definição</th>
+        </tr>
+
+        <tr>
+            <td> td </td>
+            <td> Dados da Tabela </td>
+        </tr>
+
+        <tr>
+            <td> tr </td>
+            <td> Linhas, próxima linha</td>
+        </tr>
+
+        <tr>
+            <td> th </td>
+            <td> Cabeçalho</td>
+        </tr>
+
+        <tr>
+            <td> caption </td>
+            <td>Título</td>
+        </tr>
+    </table>
+    <br> <hr>
+
+
+    <!--Bordas-->
+    <h2 id="HTML_bordas">HTML - Tipos de Bordas para Tabela</h2>
+    <p>
+        Ao Adicionarmos uma borda a nossa tabela, também precisamos adiciona-las ao redor de cada célula.<br></p>
+
+        <center>
+            <img src="Imagens\Table_dupla.png" alt="Tabela Dupla">
+        </center>
+    
+    <p>
+        Para adicionarmos um limite, utilize o CSS <b> border </b> propriedade sobre <b>table</b>, <b>th</b> e <b>td</b>.<br>
+        Para evitarmos bordas duplas, podemos usar o <b>border-collapse</b> tendo como propriedade <b>collapse</b>, isso fará com que as bordas se reduzam para uma única borda, como no exemplo abaixo:<br></p>
+        
+    <center>
+        <img src="Imagens\Table_unica.png" alt="Tabela Unica">
+    </center>
+
+    <h3>Bordas da tabela com estilo</h3>
+    <p>
+        Se você definir uma cor para cada célula e deixar a cor da borda de branca (igual ao fundo do documento), terá a impressão de uma borda invisível:<br>
+    </p>
+
+    <center>
+        <img src="Imagens\table_borda_invi.png" alt="Borda invisível">
+    </center>
+
+    <h3>Bordas Redondas</h3>
+    <p>
+        Com a propriedade <b>border-radius</b>, as bordas podem ficar com os cantos arredondados:
+    </p>
+
+    <center>
+        <img src="Imagens\table_borda_red.png" alt="Bordas redondas">
+    </center>
+
+    <p>
+        Para tirar a borda ao redodar da tabela, basta retirar a propriedade <b>table</b> do style.<br>
+    </p>
+
+    <center>
+        <img src="Imagens\table_borda_red1.png" alt="Bordas redondas 2º tipo">
+    </center>
+
+    <h3> Estilos de Bordas </h3>
+    <p>
+        Para escolhermos um modelo de borda, primeiro precisamos colocar a propriedade <b>border-style</b>, assim podemos definir a propriedade delas.<br>
+        Abaixo irei colocar um resumo de quase todos os seus tipos:
+    </p>
+    <center>
+        <img src="Imagens\table_tipos.png" alt="Tipos de Bordas">
+    </center>
+    
+    <p>
+        Podemos também definir sua cor através do <b>border-color:</b>
+    </p>
+    <hr>
+
+    <h2 id="HTML_size">HTML - Tamanho das tabelas</h2>
+    <p> 
+        As tabelas podem ter vários tipos de tamanhos para colunas, linhas ou tabelas inteiras.
+    </p>
+    <center>
+        <img src="Imagens\table_size.png" alt="Tamanhos das Tabelas">
+    </center>
+
+    <p> 
+        Use o atributo <b>style</b> com as propriedades <b>width</b> ou <b>height</b> para especificar o tamanho da tabela, colunas ou linhas.<br>    
+    </p>
+
+    <h3>Largura da tabela</h3>
+    <p>
+        Para definir o tamanho de um tabela, adicione o atributo <b>style</b> ao elemento &lt;table&gt;:<br> 
+        <mark>Usar uma porcentagem como unidade de tamanho para uma largura significa a largura desse elemento em comparação com elemento pai.</mark>
+    </p>
+
+    <h3>Altura da linha da tabela</h3>
+    <center>
+        <img src="Imagens\table_size1.png" alt="Tamanho da linha">
+    </center>
+    <p>
+        Para definir a altura de uma linha, basta inserir o <b>style</b> ao elemento da linha na tabela, e isto serve para coluna também.
+    </p>
+
+    <hr>
+
+    <h2 id="HTML_cabeçalho">HTML - Cabeçalho</h2>
+    <p>
+        As tabelas em HTML podem ter cabeçalhos para cada coluna ou linhas, ou para muitas colunas/linhas. Os cabeçalhos são definidor por <b>th</b>, onde cada <b>th</b> representa o cabeçalho na tabela.<br>
+    </p>
+
+    <h3>Cabeçalhos na vertical</h3>
+    <p>
+        Para usar a primeira coluna como cabeçalho, defina a primeira célula em cada linha como um elemento <b>th</b>. 
+    </p>
+
+    <h3>Alinhar cabeçalhos</h3>
+    <p>
+        Por padrão, os cabeçalhos das tabelas já estão em negrito e centralizados.
+    </p>
+
+    <center>
+        <img src="Imagens\table_simples.png" alt="Tabela Simples">
+    </center>
+
+    <p>
+        Para alinharmos eles à esquerda ou direita, usamos o <b>text-align:</b>, basta adicionarmos ao atributo <b>style</b>.
+    </p>
+
+    <h3>Cabeçalhos para várias colunas</h3>
+    <p>
+        Você pode ter um cabeçalho que se estende por mais de uma coluna. Para fazermos isso, precisamos colocar o atributo <b>colspan</b> no elemento <b>th</b>:
+    </p>
+    <center>
+        <img src="Imagens\table_junta.png" alt="Cabeçalhos Juntos">
+    </center>
+
+    <h3>Legenda da Tabela</h3>
+    <p>
+        No HTML temos a opção de adcionarmos uma legenda a nossa tabela, podendedo ser um título também, para isso usamos o a tag <b>&lt;caption&gt;</b>. Ela deve ser inserida imediatamente após <b>&lt;table&gt;</b><br>
+    </p>
+    <hr>
+
+    <h2 id="HTML_preenchimento">Preenchimento e espaçamento da tabela</h2>
+    <p>
+        Podemos ajudar o preenchimento dentro das células e também o espaço entre as células.
+    </p>
+    <center>
+        <img src="Imagens\table_com_acolchamento.png" alt="Tabela com acolchamento">
+        <!-- Espaços -->
+        &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+        <img src="Imagens\table_com_espacamento.png" alt="Tabela com espaçamento">
+    </center>
+
+    <p>
+        O preenchimento é o espço entre às células da tabela, usa-se a propriedade <b>padding</b>. Para mexermos só no preenchimento de cima usamos a propriedade <b>padding-top</b>, caso queira usas as outras posições usa-se as propriedade <b>padding-bottom</b>, <b>padding-left</b> e <b>padding-right</b>.
+    </p>
+
+    <h3>Espaçamento de células</h3>
+    <p>
+        Por padrão, o valor vem 2 pixels, mas podemos altera-lo.<br>
+        Para isso, usamos a propriedade <b>border-space</b> no elemento <b>&lt;table&gt;</b>.
+    </p>
+
+    <hr>
+
+    <h2 id="HTML_span">Colspan & Rowpan</h2>
+    <p>
+        Podem estender as células por várias linhas/colunas.
+    </p>
+    <center>
+        <img src="Imagens\table_span.png" alt="Tabelas Spans">
+    </center>
+
+    <p>
+        Para fazer a célula se estender por várias colunas usamos o <b>colspan</b>.<br>
+        Para fazer a célula se estender por várias linhas usamos o <b>rowspan</b>.
+    </p>
+
+
+    <hr>
+    <h2 id="table_style">Estilo da tabela</h2>
+    <h3>Lista de zebra</h3>
+    <p>
+        Se você adicionar uma cor de fundo a cada linha da tabela, obterá um belo efeito de listas de zebra.<br>
+        Para definir o estilo de todos os outros elementos da tabela, use o <b>:nth-child(even)</b> use desta forma:<br>
+        <mark>td:nth-child(even){<br>
+            background-color: green;<br>
+            }</mark><br>
+            Podemos usa-lo tanto no <b>th</b> quanto no <b>td</b>.
+            Você pode combinar linhas verticais com as horizontais, e se usar uma cor transparente, obterá um resultado de sobreposição.<br>
+            Use o <b>rgba()</b> para espeficiar a transparencia da cor.
+    </p>
+    
+    <h3>Divisão horizontal</h3>
+    <p>
+        Caso você queria somente uma linha na parte inferior da sua tabela, basta adicionar a propriedade <b>border-bottom</b> em todos os elementos <b>tr</b>.<br>
+    </p>
+
+    <h3>Animação ao passar o mouse em cima da tabela</h3>
+    <p>
+        Usamos o <b>:hover</b> no <b>tr</b> e escolhemos um <b>background-color</b> diferente ou aumentamos o tamanho da fonte, assim, damos uma animação simples para a tabela.
+    </p>
+
+    <h2 id="HTML_colgroup">HTML - Colgroup</h2>
+    <p>
+        O elemento <b>&lt;colgroup&gt;</b> é usado para definir o estilo de colunas específicas de uma tabela.<br>
+        Se você quiser estilizar as duas primeiras colunas de uma tabela, use os elementos <b>&lt;colgroup&gt;</b> e <b>&lt;col&gt;</b>.<br>
+        O <b>&lt;colgroup&gt;</b> é um elemento que deve ser usado como um contêiner para as especificações da coluna.<br>
+        Cada grupo é espeficico com um elemento <b>&lt;col&gt;</b>.<br>
+        O atributo <b>span</b> espeficica quantas colunas obtêm o estilo.<br>
+        O <b>style</b> espeficica o estilo a ser dado às colunas.
+        <mark> O elemento &lt;colgroup&gt; deve ser colocado após o &lt;caption&gt; (caso tenha).</mark>
+        Se você deseja usar mais colunas com estilos diferentes, use o <b>&lt;col&gt;</b> dentro do <b>&lt;colgroup&gt;</b>.
+    </p>
+
+    <h3>Colunas vázias</h3>
+    <p>
+        Se quiser estilizar colunas no meio de uma tabela, insira o elemento <b>&lt;col&gt;</b> "vázio" (sem estilos) para as colunas anteriores.
+    </p>
+
+    <h3>Esconder Colunas</h3>
+    <p>
+        Você pode esconder colunas usando a propriedade <b>visibility: collapse</b>.
+    </p>
+
+
+    <hr>
+    <address class="formatacao_times" style="text-align: end, left; font-size: Smaller"> <a href="pag_4.html">Próxima Página</a><br>
+    <a href="pag_2.html">Página Anterior</a></address>
+
+    <div class="irtopo"><a href="pag_3.html">Topo</a></div>
+
+
+</body>
+</html>

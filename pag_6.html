@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 6</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="\Imagens">
+    <script src="script.js"></script>
+    <style>
+        hr {
+            opacity: 0.5;
+        }
+        table, td, th{
+            border-radius: 0px;
+        }
+
+    </style>
+</head>
+<body style="background-color: lightgrey;">
+    <hr>
+    <!--Menu-->
+    <ul class="menu">
+        <a href="home.html"><li class="menu_1">Home</li></a>
+        <a href="index.html"><li class="menu_1">Primeira Página</li></a>
+        <a href="pag_2.html"><li class="menu_1">Segunda Página</li></a>
+        <a href="pag_3.html"><li class="menu_1">Terceira Página</li></a>
+        <a href="pag_4.html"><li class="menu_1">Quarta Página</li></a>
+        <a href="pag_5.html"><li class="menu_1">Quinta Página</li></a>
+        <a href="pag_6.html"><li class="menu_1">Sexta Página</li></a>
+        <a href=" https://www.maujor.com/" target="_blank"><li class="menu_1">Site de CSS</li></a>
+    </ul>
+
+        <h1>Bem-vindo a Página 6</h1>    
+
+    <ul>
+        <a href="#formulario"><li>Formúlario HTML</li></a>
+        <a href="#atributos"><li>Atributos para o Form</li></a>
+        <a href="#elementos"><li>Elementos form</li></a>
+        <a href="#input"><li>Tipos de Inputs</li></a>
+        <a href="#atributos_input"><li>Atributos Input</li></a>
+        <a href="#form_atributos"><li>Form Atributos</li></a>
+
+    </ul>
+
+    <section>
+        <h2 id="formulario">Formulário HTML</h2>
+        <p>Um formulário é usado para coletar a entrada do usuário. A entrada do usuário é geralemente enviada a um servidor para processamento.</p>
+
+        
+        <section> <hr>
+            <h3>O elemento &lt;form&gt;</h3>
+            <p>Este elemento é usado para criar um formulário HTML para entrada do usuário. É um contêiner para diferentes tipos de elementos de entrada, como: campos de texto, caixas de seleção, botões de opção, botões de envio, etc.</p>
+        </section><br>
+
+        <hr>
+        <section>
+            <h3>O elemento &lt;input&gt;</h3>
+            <p>Este elemento é o mais usado, podendo ser exibido de várias maneiras, dependendo do atributo <b>type</b>. Alguns exemplos:</p>
+            <img src="Imagens\input.png" alt="Exemplos de input">
+        </section><br>
+        
+        <hr>
+        <section>
+            <h3>Campos de texto</h3>
+            <p>O <b>&lt;input type="text"&gt; define um campo de entrada da linha única para entrada de texto.</b></p>
+            <h4>No HTML:</h4>
+
+            <form>
+                <label form="fname">Primeiro nome:</label><br>
+                <input type="text" id="fname" name="fname" value="Lucas"><br>
+                <label form="lname">Último nome:</label><br>
+                <input type="text" id="lname" name="lname" value="Barbosa"><br>
+            </form>
+            <h4>No VS code:</h4>
+            <img src="Imagens\exemplo_form.png" alt="Exemplo do uso do Form">
+            <br/><hr style="border: 1px dashed black; opacity: 0.2;">
+            <div class="mark">
+                <p><strong>OBS:</strong> o formulário em si não é visível. Observe também que a largura padrão de um campo de entrada é de 20 caracteres.</p>
+            </div>
+
+        </section><br>
+
+        <hr>
+        <section>
+            <h3>O elemento &lt;label&gt;</h3>
+            <p>A tag <b>label</b> define um rótulo para muitos elementos do formulário. Sendo muito útil para usuário de leitores de tela, porque o leito de tela lerá o rótulo em voz alta quando o usuário focar no elemento de entrada.</p>
+            <p>O label também ajuda os usuário que têm dificuldade em clicar em regiões muito pequenas (como botões de rádio ou caixas de seleção) - porque quando o usuário clica dentro do label, ele altera o botão de rádio / caixa de seleção.</p>
+            <p>O atributo <b>for</b> elemento do <b>label</b> deve ser igual o atributo <b>id</b> do elemento <b>input</b> para uni-los.</p>
+        </section><br>
+
+        <hr>
+        <section>
+            <h3>Botões do rádio</h3>
+            <p>O <b>&lt;input type="radio"&gt;</b> define um botão radio.</p>
+            <p>Os botões de opção permitem que o usuário selecione UM de um número limitado de escolhas.</p>
+            <h4>No HTML:</h4>
+            <form>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="HTML">
+                <label for="javascritp">JavaScript</label>
+            </form>
+            <h4>No VS code:</h4>
+            <img src="Imagens\exemplo_label.png" alt="Exemplo de um Label">
+        </section><br>
+
+        <hr>
+        <section>
+            <h3>Caixa de Seleção</h3>
+            <p>O <b>&lt;input type="checkbox"&gt; define uma <strong>caixa de seleção</strong></b>.</p>
+            <p>As caixas de seleção permite que o usuário selecione ZERO ou MAIS opções de um número limitado de escolhas.</p>
+            <h4>No HTML:</h4>
+
+            <form>
+                <input type="checkbox" id="veiculo1" name="veiculo1" value="bike">
+                <label for="veiculo1">Eu tenho uma bicicleta</label><br>
+                <input type="checkbox" id="veiculo2" name="veiculo2" value="car">
+                <label for="veiculo2">Eu tenho um carro</label><br>
+                <input type="checkbox" id="veiculo3" name="veiculo3" value="boat">
+                <label for="veiculo3">Eu tenho um barco</label>
+            </form>
+            <br>
+            <h4>No VS code:</h4>
+            <img src="Imagens\code_checkbox.png" alt="Código do Checkbox">
+        </section>
+        
+        <hr>
+        <section>
+            <h3>Botão de envio</h3>
+            <p>O botão de envio é um <b>type="submit"</b> define um botão para enviar os dados do formulário a um manipulador de formulários.</p>
+            <p>O manipulador de formulários é normalmente um arquivo no servidor com um script para processar dados de entrada.</p>
+            <p>O manipulador de formulário é especificado no <b>action</b> presente no <b>form</b> do formulário.</p>
+            <h4>No HTML:</h4>
+            <form>
+                <label for="fname">Primeiro nome:</label><br>
+                <input type="text" name="fname" id="fname" value="Lucas"><br>
+                <label for="sname">Sobrenome nome:</label><br>
+                <input type="text" name="sname" id="sname" value="Barbosa"><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+    
+            <h4>No VS code:</h4>
+            <img src="Imagens\submit.png" alt="Código usando o submit">
+        </section>
+        
+        <hr>
+        <section>
+            <h3>O atributo nome para &lt;input&gt;</h3>
+            <p>Observe que cada campo de entrada deve ter um atributo <b>name</b> para ser enviado. Se o <b>name</b> for omitido, o valor do campo de entrada não será enviado.</p>
+            <p>Este <b>name</b> funciona para orientar quando os dados forem enviados.</p>
+        </section>
+    </section>
+    <br><hr>
+
+    <section>
+        <section>
+            <header>
+                <h2 id="atributos">Atributos para Form</h2>
+            </header>
+            <p>Veremos alguns atributos para o elemento <b>form</b>.</p>
+        </section>
+
+        <section>
+            <h3>O atributo action</h3>
+            <p>O <b>action</b> define a ação a ser executada quando o formulário for enviado. Normalmente, os dados do formulário são enviado para um arquivo no servidor quando o usuário clica no botão enviar.</p>
+            <p>No exemplo abaixo, os dados do formulário serão enviados para um arquivo chamado "action_page.php". Este arquivo contém um script do lado do servidor que lida com os dados do formulário:</p>
+            <img src="Imagens\action.png" alt="Código de exemplo para o Action">
+            <p><strong>OBS:</strong>Se o atributo <b>action</b> for omitido, a ação é definida para a página atual.</p>
+        </section>
+
+        <hr>
+        <section>
+            <header>
+                <h3>Target</h3>
+            </header>
+            <p>Este atributo como já vimos ele especifica onde exibirá a resposta recebida após o envio do formulário.</p>
+            <table>
+                <tr>
+                    <th>Valor:</th>
+                    <th>Descrição:</th>
+                </tr>
+
+                <tr>
+                    <td>_blank</td>
+                    <td>A resposta é exibida em uma nova guia</td>
+                </tr>
+
+                <tr>
+                    <td>_self</td>
+                    <td>A resposta é exibida na janela atual / Padrão</td>
+                </tr>
+
+                <tr>
+                    <td>_parent</td>
+                    <td>A resposta é exibida no quadro atual da página</td>
+                </tr>
+
+                <tr>
+                    <td>_top</td>
+                    <td>A janela é exibida em todo o corpo da janela</td>
+                </tr>
+
+                <tr>
+                    <td>framename</td>
+                    <td>A resposta é exibida em um iframe nomeado</td>
+                </tr>
+            </table>    
+        </section>
+
+        <hr>
+        <section>
+            <header>
+                <h3>O atributo method</h3>
+            </header>
+            <p>Este atributo especifica o método HTTP a ser usado ao enviar os dados do formulário.</p>
+            <p>Os formulários podem ser enviados como váriaveis de URL (com <b>method="get"</b>) ou como transação HTTP post (com <b>method="post"</b>). Mas o método padrão para enviar dados do formulário é GET.</p>
+            <p>Tendo como uma diferença entre eles, após o envio a resposta exibida no GET aparece o valor na barra de endereço na nova página. Já o POST não, fica invisível.</p>
+            <h4>Notas sobre o GET:</h4>
+            <ul>
+                <li>Acrescenta os dados do formulário ao URL, em pares nomes/valores</li>
+                <li>NUNCA use GET para enviar dados confidencias! (os dados do formulário enviado são visíveis no URL!)</li>
+                <li>O comprimento de um URL é limitado (2.048 caracteres)</li>
+                <li>Útil para envios de formulários onde um usuário deseja marcar o resultado</li>
+                <li>GET é bom para dados não seguros, como string de consulta no Google</li>
+            </ul>
+            <h4>Notas no POST</h4>
+            <ul>
+                <li>Acrescenta os dados do formulário dentro do corpo da solicitação HTTP (os dados do formulário enviado não são mostrados no URL)</li>
+                <li>O POST não tem limitações de tamanho e pode ser usado para enviar grandes quantidade de dados.</li>
+                <li>Os envios de formulários com POST não podem ser marcados</li>
+            </ul>
+
+            <div class="mark">
+                <p><strong>Dica:</strong> Sempre use o POST se os dados do formulário contiverem informções confidenciais ou pessoais!</p>
+            </div>
+        </section>
+
+        <hr>
+        <section>
+            <header>
+                <h3>Atributo de preenchimento automático</h3>
+            </header>
+            <p>O <b>autocomplete</b> especifica se um formulário deve ter o preenchimento automático ativado ou desativado.</p>
+            <p>Quando o preenchimento automático está ativado, o navegador completa os valores automaticamente com base nos valore que o usuário inseriu anteriormente.</p>
+
+            <div class="code">
+                <p>&lt;form action="/action_page.php" autocomplete="on"&gt;</p>
+            </div>
+        </section>
+
+        <hr>
+        <section>
+            <header>
+                <h3>O atributo Novalidate</h3>
+            </header>
+            <p>É um atributo booleano.</p>
+            <p>Quando presente, especifica que os dados do formulário (entrada) não devem ser validados ao serem enviados.</p>
+            <h4>Formulário com atribulo novalidate</h4>
+            <div class="code">
+                <p>&lt;form action="/action_page.php" novalidate"&gt;</p>
+            </div>
+        </section>
+    </section>
+
+    <hr>
+    <section>
+        <section>
+            <header>
+                <h2 id="elementos">Elementos Form</h2>
+            </header>
+            <p>Veremos alguns elementos que podem conter o form.</p>
+        </section>
+
+        <hr>
+        <section>
+            <header>
+                <h3>Elementos</h3>
+            </header>
+            <p>Elementos que podem estar contidos no form, podendo ser um ou mais:</p>
+            <ul>
+                <li>input</li>
+                <li>label</li>
+                <li>select</li>
+                <li>textarea</li>
+                <li>button</li>
+                <li>fielset</li>
+                <li>legend</li>
+                <li>datalist</li>
+                <li>output</li>
+                <li>option</li>
+                <li>optgroup</li>
+            </ul>
+        </section>
+
+        <hr>
+        <section>
+            <header>
+                <h3>Input</h3>
+            </header>
+            <p>O valor mais usado, pode ser exibido de várias formas, dependendo do <b>type</b>.</p>
+        </section>
+
+        <hr>
+        <section>
+            <header>
+                <h3>Label</h3>
+            </header>
+            <p>Define o rótulo de vários elementos do formulário. Sendo útil para leitores de tela, porque o leitor lerá o rótulo em voz alta quando o usuário focar no elemento de entrada.</p>
+            <p>Ajudando também os usuário com dificuldade em clicar em regiões muito pequenas (como botões de rádio ou caixas de seleção) - porque quando o usuário clica no texto dentro do label, ele alterna o botão de rádio / caixa de seleção.</p>
+            <p>O <b>for</b> da label deve ser igual ao <b>id</b> do input para uni-los.</p>
+        </section>
+
+        <hr>
+        <section>
+            <header>
+                <h3>Select</h3>
+            </header>
+            <p>Define uma lista suspensa.</p>
+            <form>
+                <label for="cars">Escola um carro:</label>
+                <select name="carros" id="cars">
+                    <option value="nenhum">Nenhum</option>
+                    <option value="fox">Fox</option>
+                    <option value="gol">Gol</option>
+                    <option value="golf">Golf</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </form><br>
+            <img src="Imagens\select.png" alt="Uso do Select">
+            <p>Os option definem uma opção que pode ser selecionada.</p>
+            <p>Por padrão, o primeiro item da lista suspensa é selecionado. Para definir uma opção pré-selecionada, adione o atributo à opção.</p>
+            <div class="code">
+                <p>&lt;option value="fox" selected&gt; Fox &lt;/option&gt;</p>
+            </div>
+            
+            <header>
+                <h3>Valores visíveis:</h3>
+            </header>
+            <p>Use o <b>size</b> para especificar o número de valores visíveis:</p>
+            <form>
+                <label for="cars">Escola um carro:</label>
+                <select name="carros" id="cars" size="3">
+                    <option value="nenhum">Nenhum</option>
+                    <option value="fox">Fox</option>
+                    <option value="gol">Gol</option>
+                    <option value="golf">Golf</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </form><br>
+            <div class="code">
+                <p>&lt;select name="carros" id="cars" size="3"&gt;</p>
+            </div>
+
+            <header>
+                <h3>Permitir váras seleções:</h3>
+            </header>
+            <p>Use o <b>multiple</b> para permitir que o usuário possa selecionar mais de uma valor</p>
+            <form>
+                <label for="cars">Escola um carro:</label>
+                <select name="carros" id="cars" size="3" multiple>
+                    <option value="nenhum">Nenhum</option>
+                    <option value="fox">Fox</option>
+                    <option value="gol">Gol</option>
+                    <option value="golf">Golf</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </form><br>
+            <p>Para selecionar mais de UM use o <kbd>CRTL</kbd></p>
+        </section>
+
+        <hr>
+        <section>
+            <header>
+                <h3>Textarea</h3>
+            </header>
+            <p>Define um campo de entrada multilinhas (uma área de texto):</p>
+
+            <form>
+                <textarea name="Mensagem" cols="30" rows="10">O gato está brincando no jardin.</textarea>
+                <br><br>
+                <input type="submit">
+            </form>
+
+            <div class="code">
+                <p>&lt;textarea name="mensagem" rows="10" cols="30"&gt;<br> O cato está brincando no jardin. <br>    &lt;/textarea&gt;</p>
+            </div>
+            <p>O rows especifica o número visíveis de linhas em uma área de texto.</p>
+            <p>O cols especifica a largura visíveis de uma área de texto.</p>
+            <p>Também podemos definir o tamanho através do CSS, width e o height.</p>
+        </section>
+
+        <hr>
+        <section>
+            <header>
+                <h3>Button</h3>
+            </header>
+            <p>Define um botão clicável.</p>
+            <button type="button" onclick="alert('Opa, beleza?')">Clique aqui!</button>
+
+            <div class="code">
+                <p>&lt;button type="button" onclick="alert('Opa, beleza?')"&gt;<br>
+                Clique aqui! <br>
+            &lt;/button&gt;</p>
+            </div>
+
+            <div class="mark">
+                <p><strong>Nota:</strong> Sempre especifique o <b>type</b> para elemento de botão. Navegadores diferentes podem usar tipos padrões diferentes para o elemento de botão.</p>
+            </div>
+        </section>
+
+        <hr>
+        <section>
+            <header>
+                <h3>Fieldset e Legend</h3>
+            </header>
+            <p>O fieldset é usado para agrupar dados relacionados em um formulário.</p>
+            <p>O legend define uma legenda para o fieldset.</p>
+
+            <form>
+                <fieldset>
+                    <legend>Pessoa</legend>
+                    <label for="fname">Primeiro nome:</label><br>
+                    <input type="text" id="fname" name="fname" value="Lucas"><br>
+                    <label for="sname">Sobrenome: </label><br>
+                    <input type="text" id="sname" name="sname" value="Barbosa"><br>
+                    <input type="submit" value="enviar"><br>
+                </fieldset>
+            </form>
+            <img src="Imagens\fieldset.png" alt="Código com Fieldset">
+        </section>
+
+        <hr>
+        <section>
+            <header>
+                <h3>Details</h3>
+            </header>
+            <p>Especifica uma lista de opções predefinidas para um <b>input</b>. Os usuários verão uma lista suspensa das opções predefinidas à medida que inserem os dados.</p>
+            <p>O atributo <b>list</b> do elemento <b>input</b> deve se referir ao atriuto <b>id</b> do elemento <b>datalist</b></p>
+
+            <p>Qual navegador você prefere?</p>
+            <form>
+                <input list="browsers" name="browser">
+                <datalist id="browsers">
+                    <option value="Internet Explorer"></option>
+                    <option value="FireFox"></option>
+                    <option value="Chrome"></option>
+                    <option value="Opera"></option>
+                    <option value="Safari"></option>
+                </datalist>
+                <input type="submit">
+            </form><br>
+
+            <img src="Imagens\datalist.png" alt="Código usando Datalist">
+        </section>
+
+        <hr>
+        <section>
+            <header>
+                <h3>output</h3>
+            </header>
+            <p>Representa o resultado de um cálculo (como um execultado pelo script).</p>
+
+            <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="range" name="a" id="a" value="50"> 100 +
+                <input type="number" name="b" id="b" value="50"> =
+                <output name="x" for="a b"></output>
+                <br><br>
+                <input type="submit">
+            </form><br>
+
+            <img src="Imagens\output.png" alt="Uso do output">
+        </section>
+
+    </section>
+
+    <section>
+        <section>
+            <header>
+                <h2 id="input">Tipos de Inputs</h2>
+            </header>
+            <p>Existem vários tipos de entrada com cada um tendo uma função diferente.</p>
+            <ul>
+                <li>input type="button"</li>
+                <li>input type="checkbox"</li>
+                <li>input type="color"</li>
+                <li>input type="date"</li>
+                <li>input type="datatime-local"</li>
+                <li>input type="email"</li>
+                <li>input type="file"</li>
+                <li>input type="hidden"</li>
+                <li>input type="image"</li>
+                <li>input type="month"</li>
+                <li>input type="number"</li>
+                <li>input type="password"</li>
+                <li>input type="radio"</li>
+                <li>input type="range"</li>
+                <li>input type="reset"</li>
+                <li>input type="search"</li>
+                <li>input type="submit"</li>
+                <li>input type="tel"</li>
+                <li>input type="text"</li>
+                <li>input type="time"</li>
+                <li>input type="url"</li>
+                <li>input type="week"</li>
+            </ul>
+            <div class="mark">
+                <p><strong>Dica:</strong>o valor de "type" padrão é text.</p>
+            </div>
+        </section> <br><hr>
+
+        <section>
+            <header>
+                <h3>Password</h3>
+            </header>
+            <p>Define o campo de senha</p>
+            <h4>No HTML:</h4>
+            <form>
+                <label for="username">Nome de usuário:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Senha:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit">
+            </form>
+            <h4>Código:</h4>
+            <img src="Imagens\psw.png" alt="Código com o type password">
+            <br>
+            <div class="mark">
+                <p>Os campos com o type password são marcados com circulos ou asteristicos.</p>
+            </div>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Submit</h3>
+            </header>
+            <p>Define um botão de envio para dados de formulário a um manipulador de formulários.</p>
+            <p>O manipulador de formulários é normalmente uma página do servidor com um script para processar dados de entrada.</p>
+            <p>O manipulador é especificado no <b>action</b>:</p>
+            <h4>No HTML:</h4>
+            <form>
+                <label for="fname">Primeiro nome:</label><br>
+                <input type="text" id="fname" name="fname" value="Lucas"><br>
+                <label for="sname">Sobrenome:</label><br>
+                <input type="text" id="sname" name="sname" value="Barbosa"><br><br>
+                <input type="submit">
+            </form>
+            <h4>Código:</h4>
+            <img src="Imagens\text.png" alt="Código com o uso do submit">
+        </section>
+
+        <section>
+            <header>
+                <h3>Reset</h3>
+            </header>
+                <p>Define um <b>botão de redefinicão</b> que redefinirá todos os valores do formulário para seus valores padrão.</p>
+                <h4>No HTML</h4>
+                <form>
+                    <label for="fname">Primeiro nome:</label><br>
+                    <input type="text" id="fname" name="fname" value="Lucas"><br>
+                    <label for="sname">Sobrenome:</label><br>
+                    <input type="text" id="sname" name="sname" value="Barbosa"><br><br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset">
+                </form>
+                <h4>Código:</h4>
+                <img src="Imagens\reset.png" alt="Código com o uso do reset">
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Radio</h3>
+            </header>
+            <p>Define um botão de opções. Estes botões permitem que o usuário selecione APENAS UMA de um número limitado de opções:</p>
+            <form>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label>
+                <input type="radio" name="fav_language" id="javascript" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </form>
+            <h4>Código:</h4>
+            <img src="Imagens\radio.png" alt="Código com uso do radio">
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Checkbox</h3>
+            </header>
+            <p>Define uma caixa de seleção. Permitem que o usuário selecione ZERO ou MAIS opções de um número limitado de escolhas.</p>
+            <form>
+                <input type="checkbox" name="veiculo1" id="veiculo1" value="Bike">
+                <label for="veiculo1">Eu tenho uma bicicleta.</label><br>
+                <input type="checkbox" name="veiculo2" id="veiculos2" value="Car">
+                <label for="veiculos2">Eu tenho um carro.</label><br>
+                <input type="checkbox" name="veiculo3" id="veiculo3" value="Boat">
+                <label for="veiculo3">Eu tenho um barco.</label><br>
+            </form>
+            <h4>Código:</h4>
+            <img src="Imagens\checkbox.png" alt="Código com o uso do checkbox">
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Button</h3>
+            </header>
+            <p>Define um <strong>botão</strong>:</p>
+            <h4>No HTML:</h4>
+            <input type="button" value="Clique aqui!" onclick="alert('Olá, tudo bem')">
+            <h4>Código:</h4>
+            <img src="Imagens\button.png" alt="Código com uso do button">
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Color</h3>
+            </header>
+            <p>É usado para campos de entrada que devem contem uma cor. Dependendo so suporte do navegador, um seletor de cores pode aoparecer no campo de entrada. </p>
+            <h4>No HTML:</h4>
+            <form>
+                <label for="favcolor">Selecione sua cor favorita:</label>
+                <input type="color" id="favcolor" name="favcolor">
+            </form>
+            <h4>Código:</h4>
+            <img src="Imagens\color.png" alt="Código usando o color">
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Date</h3>
+            </header>
+            <p>É usado em campos que deve conter uma entrada de data. Dependendo so suporte do navegador, uma selecionador de data pode aparecer no campo de entrada.</p>
+            <h4>No HTML:</h4>
+            <form>
+                <label for="birthday">Aniversário:</label>
+                <input type="date" name="birthday" name="birthday">
+            </form>
+            <h4>Código:</h4>
+            <img src="Imagens\date.png" alt="Usando o código date">
+
+            <p>Você também pode adcionar os atributos <b>max</b> e <b>min</b> para restrições de datas:</p>
+            <form>
+                <label for="datamax">Entre com uma depois de 01-01-1980</label>
+                <input type="date" id="datamax" name="datamax" max="31-12-1979"><br><br>
+                <label for="datamin">Entre com uma data antes de 01-01-2000</label>
+                <input type="date" id="datamin" name="datamin" min="31-12-1999">
+            </form>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Datetime-local</h3>
+            </header>
+            <p>Especifica um campo com data e hora, sem fuso horário. Dependendo do navegador, um seletor de data pode aparecer no campo de entrada.</p>
+            <h4>No HTML:</h4>
+            <form>
+                <label for="birthdaytime">Aniversário (data e hora):</label>
+                <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            </form>
+            <h4>Código:</h4>
+            <img src="Imagens\datetime-local.png" alt="Uso do datetime-local">
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Email</h3>
+            </header>
+            <p>É usado para campos de entrada que devem conter um e-mail. Dependendo do suporte do navegador, o endereço de e-mail pode ser validado automaticamente quando enviado.</p>
+            <p>Alguns smartphones reconhecem o tipo de e-mail e adcionam ".com" ao teclado para corresponder à entrada de um e-mail.</p>
+            <h4>No HTML:</h4>
+            <form>
+                <label for="email">Entre com seu e-mail:</label>
+                <input type="email" id="email" name="email">
+            </form>
+            <h4>Código:</h4>
+            <img src="Imagens\email.png" alt="Código com o uso do email">
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>File</h3>
+            </header>
+            <p>Define um campo de seleção de arquivos e um botão "Procurar" para uploads de arquivos.</p>
+            <form>
+                <label for="file">Selecione um arquivo:</label><br>
+                <input type="file" id="file" name="file">
+            </form>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Hidden</h3>
+            </header>
+            <p>Define um campo de entreada oculto (não visível para o usuário).</p>
+            <p>Um campo oculto permite que os desenvolvedores web incluam dados que não podem ser visto ou modificados pelos usuários quando um formulário é enviado.</p>
+            <p>Um campo oculto geralemente armazena qual registro de banco de dados precisa ser atualizados quando o formulário é enviado.</p>
+            <p><strong>OBS:</strong>Embora o valor não seja exibido para o usuário no conteúdo da página, ele é visível (e pode ser editado) usando ferramentas de desenvolvedor de qualquer navegador ou a funcionalidade "Exibir código fonte". Não use entradas ocultas como forma de segurança!</p>
+            <form>
+                <label for="fname">Primeiro nome:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <input type="hidden" id="custid" name="custid" value="3487">
+                <input type="submit" value="Enviar">
+            </form>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Month</h3>
+            </header>
+            <p>Permite selecionar um mês e ano. Dependendo do navegador, um selecionador de data pode aparecer no campo de entrada.</p>
+            <h4>No HTML:</h4>
+            <form>
+                <label for="birthday">Aniversário (mês e ano):</label>
+                <input type="month" id="birthday" name="birthday">
+            </form>
+            <h4>Código:</h4>
+            <img src="Imagens\month.png" alt="Uso do código month">
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Number</h3>
+            </header>
+            <p>Define um campo de entrada <strong>numérico</strong>:</p>
+            <p>Você também pode definir restrições de quais número serão aceitos. O exemplo a seguir exibe um campo de entrada numérica, onde você pode inserir um valor de 1 a 5:</p>
+            <form>
+                <label for="quantity">Quantidade (Entre 1 a 5):</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="5">
+            </form>
+            <h4>Código:</h4>
+            <img src="Imagens\number.png" alt="Usando o código number">
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Restrições de entradas</h3>
+            </header>
+            <p>Algumas restrições de entradas.</p>
+            <table>
+                <tr>
+                    <td>Atributo</td>
+                    <td>Descrição</td>
+                </tr>
+
+                <tr>
+                    <td>checked - Verificado</td>
+                    <td>Especifica que um campo de entrada deve ser pré-selecionado quando a página carrega (para type="checkbox" ou type="radio")</td>
+                </tr>
+
+                <tr>
+                    <td>disabled - Desativado</td>
+                    <td>Especifica que um campo de entrada deve ser desativado</td>
+                </tr>
+
+                <tr>
+                    <td>max - máximo</td>
+                    <td>Especifica o valor máximo para uma entrada</td>
+                </tr>
+
+                <tr>
+                    <td>maxlength - Comprimento máximo</td>
+                    <td>Especifica o número máximo de caracteres para um campo de entrada</td>
+                </tr>
+
+                <tr>
+                    <td>min - minímo</td>
+                    <td>Especifica o valor minímo para entrada</td>
+                </tr>
+
+                <tr>
+                    <td>pattern - Padronizar</td>
+                    <td>Especifica uma expressão regular para verificar o valor de entrada</td>
+                </tr>
+
+                <tr>
+                    <td>readyonly - Somente leitura</td>
+                    <td>Especifica que um campo de entrada é somente leitura (não pode ser alterado)</td>
+                </tr>
+
+                <tr>
+                    <td>required - Obrigatório</td>
+                    <td>Especifica que um campo de entrada deve ser obrigatório</td>
+                </tr>
+
+                <tr>
+                    <td>size - Tamanho</td>
+                    <td>Especifica a largura (em caracteres) de um campo de entrada</td>
+                </tr>
+
+                <tr>
+                    <td>step - Passo</td>
+                    <td>Especifica os intervalos de números legais para um campo de entrada</td>
+                </tr>
+
+                <tr>
+                    <td>value - Valor</td>
+                    <td>Especifica o valor padrão para um campo de entrada</td>
+                </tr>
+            </table>
+            <p>O exemplo a seguir exibe um campo de entrada numérica, onde você pode inserir um valor de 0 a 100, em etapas de 10. O valor padrão é 30:</p>
+            <form>
+                <label for="quantity">Quantidade:</label>
+                <input type="number" id="quantity" name="quantity" min="0" step="10"max="100" value="30">
+            </form>
+            <h4>Código:</h4>
+            <img src="Imagens\number_10.png" alt="Usando o código number para ficar entre 0 à 100 e pular 10 em 10">
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Range</h3>
+            </header>
+            <p>Define um controle para inserir um número cujo o valor exato não é importante (como um  controle deslizante). Intervalor padrão é de 0 a 100. No entanto, você pode definir restrições sobre o que os números são aceitos com o <b>min</b>, <b>max</b> e <b>step</b>:</p>
+            <form>
+                <label for="vol">Volume (Entre 0 a 50):</label>
+                <input type="range" id="vol" name="vol" min="0" max="50">
+            </form>
+            <h4>Código:</h4>
+            <img src="Imagens\range.png" alt="Usando o código range">
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Search</h3>
+            </header>
+            <p>É usado para campos de pesquisa (um campo de pesquisa se comporta como um campo de texto normal).</p>
+            <form>
+                <label for="gsearch">Pesquisar no Google:</label>
+                <input type="search" id="gsearch" name="gsearch">
+            </form>
+        </section>
+
+        <section>
+            <header>
+                <h3>Tel</h3>
+            </header>
+            <p>É usado para campos de entrada que devem conter um número de telefone.</p>
+            <form> 
+                <label for="phone">Entre com seu número de telefone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="(DDD) 98888-8888" pattern="([0-9] {2})[0-9]{5}-[0-9]{4}" required><br>
+                <small>(DDD) 98888-8888</small>
+            </form>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Time</h3>
+            </header>
+            <p>Permite que o usuário selecione um horário (sem fuso horário).</p>
+            <form>
+                <label for="appt">Selecione as horas:</label>
+                <input type="time" id="appt" name="appt">
+            </form>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>URL</h3>
+            </header>
+            <p>Usado em campos que devem conter URL. Dependendo do navegador, a url pode ser validado automaticamente quando enviado.</p>
+            <p>Alguns smartphones reconhecem o tipo de url e adcionam ".com" ao teclado para corresponder à entrada do url.</p>
+            <form> 
+                <label for="homepage">Adicione sua Página Inicial:</label>
+                <input type="url" id="homepage" name="homepage">
+            </form>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Week</h3>
+            </header>
+            <p>Permite que o usuário defina uma semana e um ano.</p>
+            <form> 
+                <label for="week">Selecione uma semana:</label>
+                <input type="week" id="week" name="week">
+            </form>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3></h3>
+            </header>
+        </section>        
+    </section><br><hr>
+
+    <section>
+        <section>
+            <header>
+                <h2 id="atributos_input">Atributos Input</h2>
+            </header>
+            <p>Veremos diferentes atributos para o <b>Input</b></p>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Value</h3>
+            </header>
+            <p>Especifica um valor inicial para um campo de entrada. Um nome na barra de digitação.</p>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Readonly</h3>
+            </header>
+            <p>Especifica um campo para somente leitura, fazendo com que o usuário não possa modificar os dados (porém o usuário pode tabular até ele, destacá-lo e copiar o texto dele).</p>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Disabled</h3>
+            </header>
+            <p>Especifica um campo que deve ser desativado. Um campo de entrada desativado é inutilizável e não clicável.</p>
+            <p>Um valor de um campo de entrada desabilitado não será enviado ao enviar o formulário.</p>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Size</h3>
+            </header>
+            <p>Especifica a largura visível, em caracteres, de um campo de entrada. O valor padrão para <b>size</b> é 20.</p>
+            <p><strong>OBS:</strong>o <b>size</b> funciona com os seguintes tipos de entrada: text, search, tel, url, email e password.</p>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Maxlength</h3>
+            </header>
+            <p>Especifica o número de caracteres permitidos em um campo de entrada.</p>
+            <p><strong>OBS:</strong> quando o <b>maxlength</b> é definido, o campo de entrada não aceita mais do que o número especifico de caracteres. No entando, este atributo não fornece nenhum feedback. Portanto, se você desejar alertar o usuário, deve escrever o código JavaScript.</p>
+            <form>
+                <label for="pin">PIN:</label>
+                <input type="text" id="pin" name="pin" maxlength="4" size="4">
+            </form>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Max e Min</h3>
+            </header>
+            <p>Especifica valores máximos e minímos para um campo de entrada. Estes atributos funcionam para os seguintes tipos de entrada: number, range, date, datetime-local, month, time e week</p>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Multiple</h3>
+            </header>
+            <p>Especifica que o usuário tem permissão para inserir mais de um valor em um campo de entrada. Funcionando com os seguintes tipos de entrada: email e file.</p>
+            <form>
+                <label for="files">Selecione os arquivos:</label><br>
+                <input type="file" id="files" name="files" multiple>
+            </form>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Pattern</h3>
+            </header>
+            <p>Especifica uma expressão regular com qual o valor do campo de entrada é verificado, quando o formulário é enviado.</p>
+            <p>Funciona com os seguintes elementos: text, date, search, url, tel, email e password.</p>
+            <p><strong>Dica:</strong> Use o atributo <ins>title</ins> global para descrever o padrão para ajudar o usuário.</p>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Placeholder</h3>
+            </header>
+            <p>Especifica uma pequena dica que descreve o valor esperado de um campo de entrada (um valor de amostra ou uma breve descrição do formato esperado).</p>
+            <p>A dica curta é exibida no campo de entrada antes que o usuário digite algo.</p>
+            <p>Funcionando com os seguintes elementos: text, search, tel, email, url e password.</p>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Required</h3>
+            </header>
+            <p>Especifica que o campo de entrada deve ser preenchido antes de enviar o formulário. Funcionando com os seguintes tipos de entrada: text, search, utl, tel, email, password, number, radio, file, checkbox e data pickers.</p>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Step</h3>
+            </header>
+            <p>Especifica os intervalos de números legais para um campo de entrada. Exemplo: se step="3", os números legais podem ser -3, 0, 3, 6,... .</p>
+            <p><strong>Dica:</strong> Este atributo pode ser juntado com os atributos max e min para criar um intervalo de valores legais.</p>
+            <p><b>step</b> funciona com os seguintes tipos de entrada: number, range, date, datetime-local, month, time and week.</p>
+            <div class="mark">
+                <p><strong>Nota:</strong>As restrições de entradas não são infalíveis e o JavaScript fornece muitas maneiras de adicionar entras ilegais. Para restringir a entrada com segurança, ela também deve ser verificada pelo receptor (o servidor).</p>
+            </div>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Autofocus</h3>
+            </header>
+            <p>Especifica um campo de entrada que deve obter foco automaticamente quando a página é carregada.</p>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Height e width</h3>
+            </header>
+            <p>Especificam a altura e a largura de um <b>&lt;input type="image"&gt;</b>.</p>
+            <div class="mark">
+                <p><strong>Dica:</strong> Sempre especifique os atributos de altura e largura das imagens. Se a altura forem definidas, o espaço necessario será reservado quando a página for carregada. Sem esses atributos, o navegador não sabe o tamanho da imagem e não pode reservar o espaço apropriado para ela. O efeito será que o layout da página mudará durante o carregamento (enquanto as imagens carregam).</p>
+            </div>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>list</h3>
+            </header>
+            <p>Se refere ao elemento <b>datalist</b> que contém predefinidas para um elemento &lt;input&gt;</p>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Autocomplete</h3>
+            </header>
+            <p>Especifica um campo de entrada que deve ter o preenchimento automático ativado ou desativado.</p>
+            <p>O preenchimento automático permite que o navagedor preveja o valor. Quando um usuário começa a digitar em um campo, o navegador deve exibir opções para preencher o campo, com base nos valores digitados anteriormente.</p>
+            <p>Funcionado com os segintes tipos: text, search, url, tel, email, password, range, cor e datepickers.</p>
+            <p><strong>Dica:</strong>em alguns navegadores, pode ser necessário ativar uma função de preenchimento automático para que isso funcione.</p>
+        </section><br><hr>
+    </section>
+
+    <section>
+        <section>
+            <header>
+                <h2 id="form_atributos">Form Atributos</h2>
+            </header>
+            <p>O atributo &lt;form&gt; especifica o formulário ao qual o elemento &lt;input&gt; pertence.</p>
+            <p>O valor deste atributo deve ser igual ao atributo id do elemento &lt;form&gt; ao qual pertence.</p>
+            <form id="form1">
+                <label for="fname">Primeiro nome:</label>
+                <input type="text" name="fname" id="fname"><br><br>
+                <input type="submit">
+            </form>
+            <p>O campo "Sobrenome" está fora do elemento do formulário, mas ainda faz parte do formulário.</p>
+            <label for="sname">Sobrenome:</label>
+            <input type="text" name="sname" id="fname" form="form1">
+        </section><br><hr>
+    
+        <section>
+            <header>
+                <h3>Formaction</h3>
+            </header>
+            <p>Especifica a url do arquivo que irá precessar a entrada quando o formulário for enviado.</p>
+            <p><strong>Nota:</strong> este atributo substitui o <b>action</b> do <b>&lt;form&gt;</b></p>
+            <p><b>Formaction</b> funciona com os seguintes tipos de entrada: enviar e imagem.</p>
+
+            <form>
+                <label for="fname">Primeiro nome:</label><br>
+                <input type="text" name="fname" id="fname"><br>
+                <label for="sname">Sobrenome:</label><br>
+                <input type="text" name="sname" id="sname"><br><br>
+                <input type="submit">
+                <input type="text" formaction="/action_page2.php" value="Enviar para o Admin">
+            </form>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Formenctype</h3>
+            </header>
+            <p>Especifica como os dados do formulário devem ser codificados quando enviados (somente para formulário com method="post").</p>
+            <p><strong>Nota:</strong> este atributo substitui o atributo enctype do form.</p>
+            <p>O formenctype funciona com os seguintes tipos de entradas: enviar e imagem.</p>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Formmethod</h3>
+            </header>
+            <p>Define o método HTTP para enviar dados do formulário para URL de ação.</p>
+            <p><strong>OBS:</strong> este atributo substitui o atributo de método do form.</p>
+            <p>O formmethod funciona com os seguintes tipos de entrada: enviar e iamgem.</p>
+            <p>Os dados do formulário pode ser enviados como váriavei de URL (método ="get") ou como uma transação HTTP post (método = "post").</p>
+            <div style="font-weight: bolder;">
+                <p>Observação sobre o método "get":</p>
+            </div>
+            <ul>
+                <li>Este método anexa os dados do formulário ao URL em pares nome / valor</li>
+                <li>Este método é útil para envios de formulários onde um usuários deseja marcar o resultado</li>
+                <li>Há um limite para a quantidade de dados que você pode colocar em uma URL (varia entre os navegadores)</li>
+                <li>Nunca use o método "get" para passar informações confidenciais! (a senha ou outras informções confidenciais estarão visíveis na barra de endereço do navegador)</li>
+            </ul>
+
+            <div style="font-weight: bolder;">
+                <p>Notas sobre método "post"</p>
+            </div>
+            <ul>
+                <li>Este método envia dados do formulário como uma transação HTTP post</li>
+                <li>Os envios de formulários com o método "post" não podem ser marcados</li>
+                <li>O método "post" é mais robusto e seguro do que o "get", e "post" não tem limitações de tamanho</li>
+            </ul>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Formtarget</h3>
+            </header>
+            <p>Especifica um nome ou uma palavra-chave que indica onde exibi a resposta recebida após o envio do formulário.</p>
+            <p><strong>Notas:</strong> Este atributo substitui o atributo target do form.</p>
+            <p>O <b>formtarget</b> funciona com os seguintes tipos de entrada: enviar e imagem.</p>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Formnovalidade</h3>
+            </header>
+            <p>Especifica que um elemento &lt;input&gt; não deve ser validado quando enviado.</p>
+            <p><strong>Nota:</strong> este atributo substitui o atributo novalidade do form..</p>
+            <p>O <b>formnovalidade</b> funciona somente com o tipo de entrda enviar.</p>
+        </section><br><hr>
+
+        <section>
+            <header>
+                <h3>Novalidade</h3>
+            </header>
+            <p>Quando presente, novalidade especifica que todos os dados do formulário não devem ser validados quando enviados. Especifica que nenhum dado do formulário deve ser validado no envio.</p>
+        </section>
+        
+        
+        <hr>
+    <address style="text-align: end, left; font-size: Smaller"><a href="pag_6.html">Próxima Página</a><br><a href="pag_4.html">Página Anterior</a></address>   
+
+
+    <div class="irtopo"><a href="pag_6.html">Topo</a></div>
+
+</body>
+</html>

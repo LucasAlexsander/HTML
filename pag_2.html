@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viweport" content="widht=device-width, initial-scale=1.0">
+
+    <title>Resumos de HTML / CSS pag 2</title>
+
+        <!-- Load external CSS styles -->
+        <!--<link rel="stylesheet" href="C:\Users\INSS\Documents\VS Code\HTML-CSS-Projetos\Resumo_HTML\styles.css">-->
+        <link rel="stylesheet" href="styles.css">
+        <link ref="stylesheet" href="\Imagens">
+        <!--<link ref="stylesheet" href="D:\Estudos facul\HTML e CSS\Imagens">-->
+
+</head>
+
+<body style="background-color: lightgrey">
+    <hr>
+    <!--Menu-->
+    <ul class="menu">
+        <a href="home.html"><li class="menu_1">Home</li></a>
+        <a href="index.html"><li class="menu_1">Primeira Página</li></a>
+        <a href="pag_2.html"><li class="menu_1">Segunda Página</li></a>
+        <a href="pag_3.html"><li class="menu_1">Terceira Página</li></a>
+        <a href="pag_4.html"><li class="menu_1">Quarta Página</li></a>
+        <a href="pag_5.html"><li class="menu_1">Quinta Página</li></a>
+        <a href="pag_6.html"><li class="menu_1">Sexta Página</li></a>
+        <a href=" https://www.maujor.com/" target="_blank"><li class="menu_1">Site de CSS</li></a>
+    </ul>
+
+
+
+    <hr>
+
+    <h1> Seja Muito Bem-Vindo a Página 2 </h1>
+
+
+    <h2><ins>Sumário Página 2</ins></h2>
+    <ul>
+        <a href="#HTML_link"><li>HTML links - Hyperlinks</li> </a><img src="Imagens\dados.png" alt="dados" style="width:250px;height:250px;float:right">
+        <a href="#HTML_sintaxe"><li>HTML link -Sintaxe</li> </a>
+        <a href="#HTML_target"><li>HTML link - atributo target</li> </a>
+        <a href="#HTML_URL"><li>URL absoluta vs URL relativa</li> </a>
+        <a href="#HTML_img"><li>HTML link - Usando uma imagem para acessar</li> </a>
+        <a href="#HTML_e-mail"><li>Link para um endereço de e-mail</li> </a>
+        <a href="#HTML_botao"><li>Botão para link</li> </a>
+        <a href="#HTML_title"><li>Títlo de link</li> </a>
+        <a href="#link_cor"><li>Links Color</li> </a>
+        <a href="#BOOKMARK"><li>Criando BookMark</li> </a>
+    </ul>
+
+    
+    <!--Quabra de linha e um risco na hortizontal-->
+    <br><br> <hr>
+
+
+    <h2 id="HTML_link"><img src="Imagens\Internet_image.png" style="float:right;wight:400px;height:300px;">
+    <abbr title="HyperText Markup Language"> HTML </abbr> links - Hyperlinks </h2>
+    <p> HTML links são hyperlinks, onde se você clicar será direcionado a outra página,
+    podendo abrir outra guia ou não. <br>
+    Um link não tem um texto, ele pode ser tanto uma imagem ou um texto do HTML.<br></p>
+    <hr>
+
+    <h3 id="HTML_sintaxe"> HTML link - Sintaxe </h3>
+    <p> A tag <strong>< a ></strong> é um hyperlink. Onde você adicionar o link nela, segue o exemplo abaixo:<br>
+    <strong>< a href= "url" > Texto de link < /a></strong> <br>
+    Onde o mais importante do atributo < a> é o atributo href, pois nele que você adicionará o link. <br>
+    A parte onde o link vai estar será destacado no texto, podendo ficar com uma cor diferente, um traço embaixo e em itálico.<br>
+    E clicando no texto você será direcionado a página escolhida. <br>
+    <strong> < a href= "www.google"> Ir para o Google < /a ></strong><br></p>
+    <hr>
+
+    <h3 id="HTML_target"> HTML link - atributo target </h3>
+    <p> Este atributo <strong> target </strong> definirá como o link será aberto, podendo ser
+        aberto em outro guia, no mesmo. Abaixo irei dar mais exemplos.<br>
+        <strong>_self </strong>: abrirá na mesma guia, o padrão<br>
+        <strong> _blank </strong>: será aberto em uma nova guia <br>
+        <strong> _parant </strong>: abre o documento na moldura principal, parecido com o _self <br>
+        <strong> _top </strong>: abre o documento completo na janela <br>
+        <hr>
+
+    <h3 id="HTML_URL"> URL absoluta vs URL relativa </h3>
+    <p>URL absoluta seria o link da url completa no atributo href de um outro website.<br>
+    Já a URL relativa é um link do mesmo website, como por exemplo, ir em um novo guia do mesmo site.<br></p>
+    <hr>
+
+    <h3 id="HTML_img"> HTML link - Usando uma imagem para acessar</h3>
+    <p>Vamos precisar usar a tag <strong> < img > </strong> dentro da tag
+        <strong> < a > </strong>, como no exemplo a seguir;<br>
+        <strong><pre class="formatacao_cursive"> < a href="google.com"> 
+            < img src="www.imagem_qualquer.com" alt="Qualquer Imagem" > < /a ></strong></pre>
+        Feito isso o link está na imagem.</p>
+    <hr>
+
+    <h3 id="HTML_e-mail"> Link para um endereço de e-mail</h3>
+    <p>Você terá que usar a tag <q>mailto:</q> dentro do <q>href</q> para gerar um link para
+        seu e-mail.<br>
+        <b>< a href="mailto:seu_e-mail@exemplo.com" > Link para e-mail < /a ></b><br></p>
+    <hr>
+
+    <h3 id="HTML_botao"> Botão para link </h3>
+    <p>Para adicionarmos um botão ao seu site, precisamos colocar alguns comenado no
+        JavaScript, ele faz com que você possa criar alguns eventos em seu site, como apertar um botão.<br>
+        Um exemplo de como usariamos o código no HTML: <br>
+        < button onclick="document.location='defaut.asp'">HTML Tutorial< /button><br>
+                <button onclick="document.location='default.asp'">HTML Tutorial</button>
+    </p>
+    <hr>
+
+    <h3 id="HTML_title"> Título de link </h3>
+    <p>Neste comenado você colocara alguma informação quando a pessoa passa o mouse em cima
+        do link, podendo falar pra onde ela esta indo.<br>
+        Para usarmos o comando <q> title:</q> primeiro precisando deixar ele dentro do <q>< a ></q>. Siga o exemplo abaixo:<br>
+        <b>< a href="URL" title="Ir para a URL"> Link < /a ></b><br>
+        <hr>
+
+    <h3><img src="Imagens\internet_icons.png" alt="Internet Icons" style="float:right;wight:400px;height:300px"> Chapter Summary about Links</h3>
+    <img src ="Imagens\Chapter_Summary_Links.png" alt="Chapter Links">
+    <br><br><br>
+    <hr>
+
+    <h3 id="link_cor">Links Color </h3>
+    <p>No HTML tem diferentes cores dependendo do que você fez, se você entrou no site vai ter um, se não vai ter outra e por ae vai.<br>
+    Se você entrou no site vai ficar sublinhada e roxo;<br>
+    Se você não entrou vai ficar sublinhada e azul;<br>
+    Se o site está ativo vai ficar sublinhada e vermelho.<br>
+    Tem alguns comando que você consegue alterar o texto que contém o link, sendo eles, <q>link:</q>, <q>hover:</q>, <q>active:</q> e <q>visited:</q>, esses são comando que você pode alterar, conforme o usúario tenha entrado ou não neles. <br>
+    Significado: <br>
+    <strong> link: </strong>: o link por padrão;<br>
+    <strong> hover: </strong>: quando passa o mouse emcima;<br>
+    <strong> active: </strong>: quando o link está ativo;<br>
+    <strong> visited: </strong>: quando o link já foi acessado. <br>
+    Usando o CSS conseguimos criar um botão, mas precisa usar alguns comenados dentro do comando de preferência passado anteriomente. Para isso, vamos escolher um background, uma cor do texto, a borda, onde o texto vai estar.<br>
+    Um exemplo de um botão criado pelo CSS:<br>
+    <pre class="formatacao_cursive">                          <b>< style ></b><img src="Imagens\lofi-girl-lofi.gif" title="Gilr Study lo-fi" style="float:right;wight:400px;height:300px"><img id="inverter" src="Imagens\lofi-girl-lofi.gif" alt="Gilr Study lo-fi" style="float:left;wight:400px;height:300px">
+                            <b>a:link, a:visited {</b>
+                                <b>background-color: #f44336;</b>
+                                <b>color: white;</b>
+                                <b>padding: 15px 25px;</b>
+                                <b>text-align: center;</b>
+                                <b>text-decoration: none;</b>
+                                <b>display: inline-block;</b>
+                            <b>}</b>
+
+                            <b>a:hover, a:active {</b>
+                                <b>background-color: red;</b>
+                            <b>}</b>
+                        <b>< /style > </b></pre></p>
+    <hr>
+
+    <h3 id="BOOKMARK"> Criando BookMark </h3>
+    <p>O BookMark é usado em site grande, onde podemos clicar em um texto e ser direcionado para ele.<br>
+    Primeiro, precisamos criar um atributo <q>id</q> para o BookMark.<br>
+    <b>< h2 id="C4"> Capítulo 4 < /hr ></b><br>
+    Segundo, vamos adcionar um link para o BookMark ("Pular para tal capítulo").<br>
+    <b> < a href="#C4"> Pular para o capítulo 4 < /a > </b><br>
+    Terceiro(opcional), caso você queira tem como você criar um BookMark para outra página. <br>
+    <b> < a href="html_demo.html#C4"> Pular para o caítulo 4 </a > </b><br>
+    
+    <hr>
+
+
+
+    
+
+    
+    <!--INSS-->
+    <address class="formatacao_times" style="text-align: end, left; font-size: Smaller"> <a href="pag_3.html"> Próxima Página </a> <br>
+    <a href="index.html">Página Anterior</a></address>
+
+
+    <div class="irtopo"><a href="pag_2.html">Topo</a></div>
+
+</body>
+
+</html>

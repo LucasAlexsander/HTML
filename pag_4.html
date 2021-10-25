@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viweport" content="widht=device-width, initial-scale=1.0">
+
+        <title>Resumos de HTML / CSS pag 4</title>
+
+        <!-- Load external CSS styles -->
+        <!--<link rel="stylesheet" href="C:\Users\INSS\Documents\VS Code\HTML-CSS-Projetos\Resumo_HTML\styles.css">-->
+        <link rel="stylesheet" href="styles.css">
+        <link ref="stylesheet" href="\Imagens">
+        <script src="script.js"></script>
+        <!--<link ref="stylesheet" href="D:\Estudos facul\HTML e CSS\Imagens">-->
+
+    </head>
+<body style="background-color: lightgrey">
+
+    <hr>
+    <!--Menu-->
+    <ul class="menu">
+        <a href="home.html"><li class="menu_1">Home</li></a>
+        <a href="index.html"><li class="menu_1">Primeira Página</li></a>
+        <a href="pag_2.html"><li class="menu_1">Segunda Página</li></a>
+        <a href="pag_3.html"><li class="menu_1">Terceira Página</li></a>
+        <a href="pag_4.html"><li class="menu_1">Quarta Página</li></a>
+        <a href="pag_5.html"><li class="menu_1">Quinta Página</li></a>
+        <a href="pag_6.html"><li class="menu_1">Sexta Página</li></a>
+        <a href=" https://www.maujor.com/" target="_blank"><li class="menu_1">Site de CSS</li></a>
+    </ul>
+
+    <hr>
+
+
+    
+    <h1><ins>Bem-Vindo a Página 4</ins></h1><br>
+
+
+
+    <h2>Sumário da Página 4</h2>
+
+    <ul>
+        <a href="#listas"><li>Listas em HTML</li></a>
+        <a href="#bloco"><li>Bloco HTML e Elementos</li></a>
+        <a href="#div"><li>Elemento &lt;div&gt;</li></a>
+        <a href="#span"><li>Elemento &lt;span&gt;</li></a>
+        <a href="#classes"><li>Classes - class</li></a>
+        <a href="#id"><li>ID</li></a>
+        <a href="#iframes"><li>Iframes</li></a>
+        <a href="#Java"><li>HTML - Java</li></a>
+        <a href="#path"><li>Caminho de Arquivos HTML</li></a>
+        <a href="#head"><li>HTML - Elemento principal</li></a>
+        <a href="#layout"><li>HTML Layout</li></a>
+        
+    </ul>
+
+    <!-- Quabra de linha e um risco na horizontal-->
+
+    <br><br><hr>
+
+    <h2 id="listas">Listas em HTML</h2>
+    <p>
+        A lista ajuda aos desenvolvedores web a agruparem e organizarem um conjunto de itens em listas.<br>
+        Podemos organizar as listas em dois tipos, as organizadas e as não organizadas.
+    </p>
+    <h3>Não organizadas</h3>
+    <p>
+        Para fazermos este tipo de lista primeiro temos que usar a tag <b>&lt;ul&gt;</b>. Cada item da lista começa com a tag <b>&lt;li&gt;</b>.<br>
+        Os itens desta lista serão marcados com marcadores (circulos pretos) por padrão.
+    </p>
+    <h4>Exemplo:</h4>
+    <ul>
+        <li>Maça</li>
+        <li>Banana</li>
+    </ul>
+
+    <p>
+        Podemos mudar os marcadores dos itens não organizados, para isso basta colocarmos a propriedade <b>list-style-type</b>, assim podemos escolher algums modelos, como por exemplo:
+    </p>
+
+    <!--Tabela-->
+    <table>
+        <tr>
+            <td>Valor</td>
+            <td>Descrição</td>
+        </tr>
+
+        <tr>
+            <td>disc</td>
+            <td>O valor padrão, fica um ponto preto</td>
+        </tr>
+
+        <tr>
+            <td>circle</td>
+            <td>Um circulo com o meio transparente</td>
+        </tr>
+
+        <tr>
+            <td>square</td>
+            <td>Um quadrado</td>
+        </tr>
+
+        <tr>
+            <td>none</td>
+            <td>Um espaço em branco</td>
+        </tr>
+
+    </table>
+
+
+
+
+    <h3>Lista ordenada</h3>
+    <p>
+        Para utilizarmos este tipo de lista temos que usar primeiro a tag <b>&lt;ol&gt;</b>, e cada item da lista se usa a tag <b>&lt;li&gt;</b>.<br>
+        Por padrão este iten são marcados por números.
+    </p>
+    <h4>Exemplo:</h4>
+    <ol>
+        <li>Casa</li>
+        <li>Roupa</li>
+    </ol>
+    <h3>
+        Alguns tipos de estilos para listas ordenadas:
+    </h3>
+
+    <table>
+        <tr>
+            <td>Valor</td>
+            <td>Descrição</td>
+        </tr>
+
+        <tr>
+            <td>type=1</td>
+            <td>Default, seria o padrão com os números</td>
+        </tr>
+
+        <tr>
+            <td>type=A</td>
+            <td>A,B,C em maiúsculas</td>
+        </tr>
+
+        <tr>
+            <td>type=a</td>
+            <td>a,b,c em minúsculas</td>
+        </tr>
+
+        <tr>
+            <td>type=I</td>
+            <td>Números romanos em maiúsuclas</td>
+        </tr>
+
+        <tr>
+            <td>type=i</td>
+            <td>Números romanos em minúsculas</td>
+        </tr>
+    </table>
+
+    <h3>Listas de descrição</h3>
+    <p>
+        Uma lista de descrição é uma lista de termos, com uma descrição de cada termo.<br>
+        A tag <b>&lt;dl&gt;</b> define a lista de descrição, a tag <b>&lt;dt&gt;</b> define o termo (nome) e <b>&lt;dd&gt;</b> descreve cada termo.
+    </p>
+    <h4>Exemplo:</h4>
+    <dl>
+        <dt>Café</dt>
+        <dd>- Bebida preta com cafeina</dd>
+        <dt>Leite</dt>
+        <dd>- Bebida branca, fria e da vaca</dd>
+    </dl>
+
+
+    <h3>Resumo das Tags</h3>
+    <center>
+        <img src="Imagens\tag_lista.png" alt="Lista de Tag para Listas em HTML">
+    </center>
+
+    <hr>
+
+    <h3>Alinhando listas</h3>
+    <p>
+        Podemos alinhas uma lista dentro de outr lista. Para isso iniciamos uma lista e logo em seguidamos colocamos um outra dentro dela, assim ficamos com sublistas.
+    </p>
+    <h4>Exemplo:</h4>
+    <ul>
+        <li>Café</li>
+        <li>Água</li>
+        <ol>
+            <li>Com gás</li>
+            <li>Sem gás</li>
+        </ol>
+    </ul>
+
+    <h3>Lista na horizontal</h3>
+    <p>
+        As listas podem ser estilizadas de muitas maneiras no CSS, uma delas é na horizontal, uma maneira muito usada para criar menu de navegação.
+    </p>
+    <ul style="text-decoration: none; list-style-type: none;">
+        <li style="float: left; padding: 15px; background-color: white;"> <a href="#home">Home</a></li>
+        <li style="float: left; padding: 15px; background-color: white;"><a href="#end">End</a></li>
+    </ul>
+    <br><br><br>
+    <hr>
+
+    <h2 id="bloco">Bloco HTML e Elementos</h2>
+    <h3>Elemento em Bloco</h3>
+    <p>
+        Um elemento bloco ele possui margens superiores e inferiores, sempre começa em uma nova linhas e ocupa toda a largura disponível (se estende tanto pra direita quanto pra esquerda o quanto pode)
+    </p>
+    <h4>Exemplos de elementos blocos:</h4>
+    <center>
+        <img src="Imagens\bloco.png" alt="Elementos Blocos">
+    </center>
+
+
+    <h3>Elemento embutido - Inline</h3>
+    <p>
+        Um elemento embutido ocupa apenas o necessário, não começa em uma nova linha.<br>
+        Este é <span style="border: 1px solid blue">um elemento &lt;span&gt; dentro</span> de um parágrafo.
+    </p>
+    <h3>Exemplos de elementos embutido - Inline</h3>
+    <center>
+        <img src="Imagens\inline.png" alt="Elementos Inline">
+    </center>
+
+    <br><hr>
+    <h2 id="div">Elemento &lt;div&gt;</h2>
+    <p>
+        O <b>div</b> é usado como contêiner para outros elementos do HTML, não contendo elementos obrigatorios igual aos demais. Juntando o CSS com <b>&lt;div&gt;</b> conseguimos estilizar outros blocos.
+    </p>
+    <h4>Exemplo de aplicação:</h4>
+    <center>
+        <img src="Imagens\div.png" alt="Uso do div">
+    </center>
+    <br><hr>
+
+    <h2 id="span">Elemento &lt;span&gt;</h2>
+    <p>
+        O <b>span</b> é parecido com o <b>div</b>, mas a sua difirença é que ele é usado dentro do texto, servindo para marcar uma parte.
+    </p>
+    <h4>Exemplo do uso do &lt;span&gt;:</h4>
+    <center>
+        <img src="Imagens\span.png" alt="Uso do span">
+    </center>
+
+    <br><hr>
+
+    <h2 id="classes">Classes - class</h2>
+    <p>
+        <b>Class</b> é usado para manipular elementos de um texto, podendo muda-lo conforme você deseja. Geralmente atribuimos valores a ele através do CSS e podemos atribui-lo a qualquer elemento do HTML.<br>
+        <b>OBS:</b> o nome da classe diferencia maiúsculas das minúsculas.
+    </p>
+
+    <h3>Span / div</h3>
+    <p>
+        Podemos atribuir uma class para esse dois elementos, fazendo com que eles mudem suas caracteristicas. Mas a diferença entre o <b>span</b> e <b>div</b> continuam as mesmas.
+    </p>
+
+    <h3>Sintaxe para Class</h3>
+    <p>
+        Para criamos uma classe, primeiro devemos adicionar um (.), seguido do nome da classe. Logo em seguida, defina as suas propriedade entre as chaves {}:
+    </p>
+    <h4>Exemplo:</h4>
+    <pre>
+        .classe{
+            propriedade:valor;
+        }
+    </pre>
+
+    <h3>Classes Multiplas</h3>
+    <p>
+        Os elementos em HTML podem ser usados com mais de um classe, para fazermos isso, devemos serpara-los com espaço, como o exemplo a seguir:
+    </p>
+    <pre>
+        .city {
+            propriedade:valor;
+        }
+
+        .main {
+            propriedade: valor;
+        }
+
+        &lt;h2 class="city main"&gt;London&lt;/h2&gt;
+    </pre>
+
+    <h3>Diferentes elementos podem conter a mesma classe</h3>
+    <p>
+        Um elemento &lt;p&gt; pode conter a mesma classe que um elemento &lt;h2&gt; e virse-versa.
+    </p>
+
+    <h3>Uso de Classes em JavaScript</h3>
+    <p>
+        Classes também podem ser usada no JavaScript para realizar certas tarefas para cada elemento específico. JavaScript pode acessar elementos com um nome de classe específico com o metódo <b>getElementsByClassName()</b>
+    </p>
+
+    <br><hr>
+
+    <h3>Um breve resumo de Classes:</h3>
+    <center>
+        <img src="Imagens\classes.png" alt="Resumo Classes">
+    </center>
+
+    <hr>
+
+    <h2 id="id">ID</h2>
+    <p>
+        Diferente do class, o atributo <b>id</b> só pode ter em um único elemento no seu proprama, ele é como se fosse uma identidade única. Ele também pode ser usado no JavaScript para estilizar algum elemento do arquivo.
+    </p>
+
+    <h3>Sintaxe:</h3>
+    <p>
+        Quando queremos criar um <b>id</b> primeiro colocamos hashatg(#), seguindo do nome do id. Em seguida, definimos suas propriedade dentro de chaves {}. E para chama-lo colocamos logo em seguida da tag que você deseja atribuir o valor o seguinte comando, "id='nome_do_id'".<br>
+        <b>OBS:</b> o id é sensível a letras maiúsculas e minúsculas, e o nome dele deve conter pelo menos um caractere, não podendo começar com um número e não dever conter espaços em branco (espaços, tabulações, etc)
+    </p>
+
+    <h3>Diferença entre ID e Class</h3>
+    <p>
+        O ID só pode ser usado uma vez, enquanto o class pode ser usado varias vezes por qualquer elemento.
+    </p>
+
+    <h3>Marcadores HTML com ID e links</h3>
+    <p>
+        Os marcadores são usado quando a página do seu site é muito grande, onde você coloca um link onde o usúario clica e cai na onde estava denominado, podemos chamar isso de bookmarks também.<br>
+        Para cria-lo primeiro devemos, adicionar um atributo <b>id</b> com um nome único a algum elemento.<br>
+        Em seguida, adicionamos um <b>&lt;a href=""&gt;</b> na mesma página onde o <b>id</b> deve estar contido dentro do "href=" mas com uma hashtag(#).<br>
+        Caso você deseja adicionar um <b>id</b> de outra página, você terá que colocar o link da página primeiro e na frente hastag(#) junto com o nome do <b>id</b>.
+    </p>
+    <h4>Exemplos:</h4>
+    <h5>Mesma página:</h5>
+    <center>
+        <img src="Imagens\mesma_pagina.png" alt="Id na mesma página">
+    </center>
+    <h5>Outra página:</h5>
+    <center>
+        <img src="Imagens\outra_pagina.png" alt="Id em outra página">
+    </center>
+
+    <h3>Usando ID em JavaScript</h3>
+    <p>
+        O atributo <b>id</b> pode ser usado pelo JavaScript para realizar alguma tarefa em determinado elemento.<br>
+        O JavaScript pode acessar um elemento com id específico com o <b>getElementById()</b>
+    </p>
+    <hr>
+
+    <h2 id="iframes">Iframes</h2>
+    <p>
+        É usado para exibir uma página da web dentro de uma página web.
+    </p>
+    <h3>Sintaxe:</h3>
+    <p>
+        A tag <b>&lt;iframe&gt;</b> especifica um quadro embutido. Um quadro embutido é usado para incorporar outro documento dentro do documento HTML atual.<br>
+        Tendo como sintaxe:<br>
+    </p>
+    <center>
+        <img src="Imagens\iframe.png" alt="Iframe Sintaxe">
+    </center>
+    <p>
+        <b>OBS:</b> é uma boa pratica sempre usar um <i>title</i> dentro do <b>&lt;iframe&gt;</b>. Isso é usado por leitores de tela para ler qual é o conteúdo do iframe.
+    </p>
+    <hr>
+    <center>
+        <iframe style="overflow: scroll;" src="https://portalg2.com.br/" title="Portal da G2" height="400" width="800"></iframe>
+    </center>
+    <hr>
+
+    <h3>Iframe - largura e altura</h3>
+    <p>
+        Para alterar esses valores usamos o <b>height</b> e o <b>width</b> e alteramos o seus pixels. Podemos também usar o <b>style</b> para fazer essa alterações.
+    </p>
+
+    <h3>Iframe - Remover a borda</h3>
+    <p>
+        Por padrão o <b>iframe</b> tem uma borda ao seu redor, para irarmos usamos o atribulo <b>style</b> junto com a propriedade <b>border</b> e colocamos no <b>none</b> no CSS.<br>
+        Com style, você também pode alterar o tamanho, cor, estilo, etc.
+    </p>
+
+    <h3>Iframe - destino para um link</h3>
+    <p>
+        Um iframe pode ser usado como o quadrado de destino de um link. O atributo <b>target</b> deve se referir ao atributo <b>name</b>.
+    </p>
+    <h4>Exemplo:</h4>
+    <center>
+        <img src="Imagens\iframe_exemplo.png" alt="Exemplo do target no iframe">
+    </center>
+
+    <h3>Resumo do Iframe:</h3>
+    <center>
+        <img src="Imagens\resumo_iframe.png" alt="Resumo Iframe">
+    </center>
+
+    <br><hr>
+
+    <h2 id="Java">HTML - JavaScript</h2>
+    <p>
+        O JavaScript deixa as páginas mais dinamicas e adiciona interções.
+    </p>
+
+    <h3>Adicionando o arquivo Script para o HTML</h3>
+    <p>
+        Para adcionrmos um script para o documento, abrimos o <b>scritp</b> logo em seguida colocamos <b>src="path"</b> e fechamos o <b>script</b>
+    </p>
+
+    <h3>Data e hora</h3>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Clique no botão para ver a data e as horas.</button>
+    <p id="demo"></p>
+
+    <p>
+        A tag <b>&lt;script&gt;</b> é usada para definir o ínicio de um script, onde dentro possui instruições de um script ou aponta para um arquivo de script externo por meio do atributo <b>src</b>. <br>
+        Os usos mais comuns do JavaScript é a manipulação de imagens, validação de formulários e mudanças dinâmicas de conteúdo. <br>
+        Para selecionar um elemento HTML, o JavaScript geralmente usa o metódo <b>getElementById()</b>. Este exemplo a seguir, escreve "Hello JavaScript!" em um elemento com id="demo1":
+    </p>
+    <center>
+        <img src="Imagens\script_exemplo.png" alt="Exemplo de uso do script">
+    </center>
+
+
+    <script>
+        document.getElementById('demo1').innerHTML = "Hello JavaScript!";
+    </script>
+    <p id="demo1"></p>
+
+
+    <h3>Um pouquinho mais de JavaScript</h3>
+    <p>
+        Alguns exemplos do que o JavaScript pode fazer:
+    </p>
+    <center>
+        <img src="Imagens\alterar_o_conteudo.png" alt="JavaScript alterando o conteúdo">
+    </center>
+
+    <p id="troca">Uma demonstração</p>
+    <button type="button" onclick="myFunction()">Clique aqui</button>
+
+
+    <hr>    
+    <center>
+        <img src="Imagens\mudando_estilos.png" alt="JavaScript mudando estilos">
+    </center>
+
+    <button type="button" onclick="estilos()">Alterar estilos</button>
+    <p id="estilo">Trocando o estilo com JavaScript</p>
+
+    <hr>
+    <center>
+        <img src="Imagens\java_atributo.png" alt="JavaScript alterando atributo">
+    </center>
+
+    <!-- Trocar imagens-->
+    <img id="imagem" src="Imagens\feliz.png" wight="300" height="300">
+
+    <script>
+        function feliz() {
+            document.getElementById('imagem').scr = "Imagens\feliz.png";
+        }
+
+        function triste() {
+            document.getElementById('imagem').src = "Imagens\triste.png";
+        }
+    
+    </script>
+
+    <p>
+        <button type="button" onclick="feliz()">Feliz</button> 
+        <button type="button" onclick="triste()">Triste</button>
+    </p>
+    
+
+    <h3>TAG noscript</h3>
+    <p>
+        É um conteúdo alternativo para quando o navegador não possui scripts, você pode adicionar uma mensagem nela.
+    </p>
+    <h4>Exemplo:</h4>
+    <center>
+        <img src="Imagens\noscript_exemplo.png" alt="Exemplo de noscript">
+    </center>
+
+    <br><hr>
+
+    <h2 id="path">Caminho de Arquivos HTML</h2>
+    <p>
+        Descreve a localização de um arquivo na estrutura de pastas de um site na web.
+    </p>
+
+    <h3>Exemplos, de arquivos:</h3>
+    <table>
+        <tr>
+            <td style="font-weight: bolder;">
+                Caminho
+            </td>
+            <td style="font-weight: bolder;">
+                Descrição
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                &lt;img src="picture.jpg"&gt;
+            </td>
+            <td>
+                O arquivo "picture.jpg" está localizado na mesma pasta da página atual.
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                &lt;img src="images/picture.jpg"&gt;
+            </td>
+            <td>
+                O arquivo "picture.jpg" está localizado na pasta de imagens da pasta atual.
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                &lt;img src="/images/picture.jpg"&gt;
+            </td>
+            <td>
+                O arquivo "picture.jpg" está localizado na pasta de imagens raiz da web atual.
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                &lt;img src="../picture.jpg"&gt;
+            </td>
+            <td>
+                O arquivo "picture.jpg" está localizado na pasta um nível acima da pasta atual.
+            </td>
+        </tr>
+    </table>
+
+    <h3>Caminho de arquivo absolutos</h3>
+    <p>
+        É o caminho da <i>URL</i> completa para um determinado arquivo.
+    </p>
+
+    <h3>Caminhos de arquivos relativos</h3>
+    <p>
+        Aponta para um arquivo relativo à página atual, por exemplo, o arquivo atual esta na pasta <i>Home</i> e junto com ele tem uma pasta <i>Imagens</i> e você deseja entra para pegar uma imagem, então você vai colocar <b>Imagens/nome_da_foto</b>.
+    </p>
+    <h4>Próximo exemplo:</h4>
+    <p>
+        Quando o arquivo esta em uma página anterior da página atual. <br>
+        Você vai colocar, <b>../Imagens/nome_da_foto</b> assim você vai conseguir acessar tranquilamente a foto.
+    </p>
+    <h4>Próximo exemplo:</h4>
+    <p>
+        Quando o arquivo esta localizado na raiz da web atual. <br>
+        Você vai colocar, <b>/Imagens/nome_da_foto</b> assim conseguirá acessar as fotos.
+    </p>
+
+    <h3>Boas praticas</h3>
+    <p>
+        Sempre que der use o caminho de arquivo relativo (se possível). Se usarmos algum link para imagens pode acontecer do link para de funcionar e a imagem do site ficar perdida, e praticamente em todos os site usam arquivos em um banco de imagens para evitar este problema.
+    </p>
+
+    <h2 id="head">HTML - Elemento principal</h2>
+    <p>
+        O elemento &lt;head&gt; é um recepiente para os seguintes elementos: &lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, e &lt;base&gt;. <br>
+        Sendo conteiner para metadados(dados sobre dados) e é colocado entre as tags &lt;html&gt; e &lt;body&gt;. Metadados são dados sobre o documento HTML. Os metadados não são exibidos, e normalmente definem o título do documento, conjunto de caracteres, estilos, scripts e outras metainformações.
+    </p>
+
+    <h3>Elemento &lt;Title&gt;</h3>
+    <p>
+        Define o título do documento. O título deve ser somente texto e é mostrado na barra de título do navegador ou na guia da página. Sendo um item obrigatório no documentos HTML. <br>
+        O conteúdo do título de uma página é muito importante para a otimização do mecanismo de pesquisa (SEO). <br>
+    </p>
+    <h4>O elemento &lt;title&gt;:</h4>
+    <ul>
+        <li>Define um título na barra de ferramentas do navegador;</li>
+        <li>Fornece um título para a página quando ela é adicionadas aos favoritos;</li>
+        <li>Exibe um título para a página nos resultados do mecanismo de pesquisa.</li>
+    </ul>
+
+    <p>
+        Portanto tente tornar o título o mais significativo e preciso possível.
+    </p>
+
+    <h3>Elemento &lt;style&gt;</h3>
+    <p>
+        Usado para definir informações de estilo para uma única página HTML.
+    </p>
+
+    <h3>Elemento &lt;link&gt;</h3>
+    <p>
+        Define a relação entre o documento atual e um recurso externo. Mais usada para vincular o arquivo style para à página HTML.
+    </p>
+
+    <h3>Elemento &lt;meta&gt;</h3>
+    <p>
+        Usado para espeficicar o conjunto de caracteres, a descrição da página, as palavras-chaves, o autor do documento e as configurações da janela de visualização. <br>
+        Os metadados não serão exibidos na página, mas são usados por navegadores (como exibir conteúdo ou recarregar a página), por mecanismos de pesquisa (palavras-chaves) e outros serviços da web.
+    </p>
+
+    <h4>Exemplos:</h4>
+    <h5>Defina o conjunto de caracteres usado:</h5>
+    <p>
+        &lt;meta charset="UTF0-8"&gt;
+    </p>
+
+    <h5>Defina palavras-chaves para mecanismos de pesquisa:</h5>
+    <p>
+        &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;
+    </p>
+
+    <h5>Defina uma descrição de sua página web:</h5>
+    <p>
+        &lt;meta name="description" content="Free Web tutorials"&gt;
+    </p>
+
+    <h5>Defina o autor da página:</h5>
+    <p>
+        &lt;meta name="author" content="Lucas Alexsander"&gt;
+    </p>
+
+    <h5>Atualize o documento a cada 30seg:</h5>
+    <p>
+        &lt;meta http-equiv="refresh" content="30"&gt;
+    </p>
+
+    <h5>Defina a janela de visualização para que seu site tenha uma boa aparência em todos os aplicativos:</h5>
+    <p>
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    </p>
+
+    <br>    
+    <h3>Configurando a janela de visualização</h3>
+    <p>
+        Está janela é a área visível do usuário em uma página da web. Isso varia de acordo com o dispositivo, será menor em um telefone celular do que na tela de um computador. <br>
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+        Isso fornece ao navegador informações de como controlar as dimensões e escala da página. <br>
+        A <b>width=device-width</b> define a largura da página para seguir a largura da tela do dispositivo (que irá variar dependendo do dispositivo). <br>
+        A <b>initial-scale</b> define o zoom inicial quando a página é carregada pela primeira vez pelo navegador.  
+    </p>
+    <h3>Diferença com o meta e sem:</h3>
+    <center>
+        <img src="Imagens\meta.png" alt="Meta comparação">
+    </center>
+
+    <h3>Elemento &lt;script&gt;</h3>
+    <p>
+        Elemento usado para definir JavaScript do lado do cliente.
+    </p>
+    
+    <h3>Elemento &lt;base&gt;</h3>
+    <p>
+        Especifica o URL base e / ou destino para todos os URLs relativos a página. Este URL tem que ser o original e nele conseguimos ir para suas subpaginas. <br>    
+        A <b>base</b> deve conter um <b>href</b> e / ou <b>target</b>.
+    </p>
+
+    <h3>Resumo do Capítulo:</h3>
+    <center>
+        <img src="Imagens\head_resumo.png" alt="Resumo sobre head">
+    </center>
+    <hr>
+
+    <h2 id="layout">HTML Layout</h2>
+    <p>
+        Os sites geralmente exibem conteúdos em várias colunas (como um jornal ou uma revista). <br>
+        O HTML possui vários elementos semânticos que definem as diferentes partes de uma página da web:
+    </p>
+    <img src="Imagens\layout.png" alt="Layout HTML" style="width:20%;max-width:350px;text-align:center;margin:auto; float:left">
+
+    <ul style="list-style-position: inside; text-align: justify;">
+            <!-- Espaços -->
+            &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+        <li>&lt;header&gt; - Define um cabeçalho para um documento ou seção.</li>
+        <li>&lt;nav&gt; - Define um conjunto de links de navegação.</li>
+        <li>&lt;section&gt; - Define uma seção em um documento.</li>
+        <li>&lt;article&gt; - Define um conteúdo independente e autocontido.</li>
+        <li>&lt;aside&gt; - Define um conteúdo além do conteúdo (como uma barra lateral).</li>
+        <li>&lt;footer&gt; - Define um rodapé para um documento ou seção.</li>
+        <li>&lt;details&gt; - Define detalhes adicionais que o usuário pode abrir e fechar sob demanda.</li>
+        <li>&lt;summary&gt; Define um título para o &lt;details&gt;.</li>
+    </ul>
+    
+    <h3>Tecnicas para criar um Layout</h3>
+    <p>
+        Existem 4 tecnicas, sendo elas:
+    </p>
+    <ul>
+        <li>Framework CSS</li>
+        <li>propriedade float CSS</li>
+        <li>CSS flexbox</li>
+        <li>Grade css</li>
+    </ul>
+
+    <h3>Framework</h3>
+    <p>
+        Se você deseja criar um layout rapidamente, você pode usar uma estrutura CSS, como <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3C.CSS</a> ou <a href="https://www.w3schools.com/bootstrap/default.asp" target="_blank">Boostrap</a>.
+    </p>
+
+    <h3>Float CSS</h3>
+    <p>
+        É comum fazer layouts inteiros da web usando a propriedade float. Float é fácil de aprender, você só precisa lembrar como as propriedades <b>float</b> e <b>clean</b> funcionam. <strong>Desvantagem:</strong> Os elementos flutuantes estão vinculados ao fluxo do documento, o que pode prejudicar a flexibilidade. Você pode pesquisar mais sobre float no site <a href="https://www.w3schools.com/css/css_float.asp" target="_blank">CSS Float and Clear</a>.
+    </p>
+    <h4>Exemplo de layout com float:</h4>
+    
+    <header class="head-simples">
+        <h2>Teste</h2>
+    </header>
+
+    <section class="section-simples">
+        <nav class="nav-simples">
+            <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Brasil</a></li>
+            </ul>
+        </nav>
+        
+        <article class="article-simples">
+            <h1>Mouse G203</h1>
+            <p>
+                Exelente mouse com ótimo custo beneficio, tamanho pequeno mas garente alta precisão, execelente estrutura.
+            </p>
+            <p>
+                Caso você queira adiquirir um vá a loja mais perto de eletronica e procure, não é difícil de encontrar.
+            </p>
+        </article>
+    </section>
+
+    <footer class="footer-simples">
+        <p>Footer</p>
+    </footer>
+
+    <br><br><hr>
+
+    <h3>Flexbox</h3>
+    <p>
+        O uso do Flexbox garante que os elementos se comportem de maneira previsível quando o layout da página deve acomodar diferentes tamanhos de tela diferentes de exibição.
+    </p>
+    <h4>Exemplo:</h4>
+    
+    <header class="header-flex">
+        <h2>Teste</h2>
+    </header>
+
+    <section class="section-flex">
+        <nav class="nav-flex">
+            <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Brasil</a></li>
+            </ul>
+        </nav>
+
+        <article class="article-flex">
+            <h1>Mouse g203</h1>
+            <p>
+                Exelente mouse com ótimo custo beneficio, tamanho pequeno mas garente alta precisão, execelente estrutura.
+            </p>
+            <p>
+                Caso você queira adiquirir um vá a loja mais perto de eletronica e procure, não é difícil de encontrar.
+            </p>
+        </article>
+    </section>
+
+    <footer class="footer-flex">
+        <p>
+            Footer
+        </p>
+    </footer>
+
+    <h3>Layout de grade</h3>
+    <p>
+        O CSS Grid Layout Module oferece um sistema de layout baseado em grade, com linhas e colunas, tornando mais fácil projetar páginas da web sem ter que usar flutuantes e posicionamento (float).
+    </p>
+    <p>
+        Se você tem interesse entre no <a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">Grades CSS</a>.
+    </p>    
+
+
+
+
+    <hr>
+    <address style="text-align: end, left; font-size: Smaller"><a href="pag_5.html">Próxima Página</a><br><a href="pag_3.html">Página Anterior</a></address>
+
+
+    
+
+
+    <div class="irtopo"><a href="pag_4.html">Topo</a></div>
+
+
+
+
+</body>
+
+</html>
+

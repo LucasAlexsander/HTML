@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viweport" content="widht=device-width, initial-scale=1.0">
+
+        <title>Resumos de HTML / CSS pag 4</title>
+
+        <!-- Load external CSS styles -->
+        <!--<link rel="stylesheet" href="C:\Users\INSS\Documents\VS Code\HTML-CSS-Projetos\Resumo_HTML\styles.css">-->
+        <link rel="stylesheet" href="styles.css">
+        <link ref="stylesheet" href="\Imagens">
+        <script src="script.js"></script>
+        <!--<link ref="stylesheet" href="D:\Estudos facul\HTML e CSS\Imagens">-->
+
+    </head>
+<body style="background-color: lightgrey">
+
+    <hr>
+    <!--Menu-->
+    <ul class="menu">
+        <a href="home.html"><li class="menu_1">Home</li></a>
+        <a href="index.html"><li class="menu_1">Primeira Página</li></a>
+        <a href="pag_2.html"><li class="menu_1">Segunda Página</li></a>
+        <a href="pag_3.html"><li class="menu_1">Terceira Página</li></a>
+        <a href="pag_4.html"><li class="menu_1">Quarta Página</li></a>
+        <a href="pag_5.html"><li class="menu_1">Quinta Página</li></a>
+        <a href="pag_6.html"><li class="menu_1">Sexta Página</li></a>
+        <a href=" https://www.maujor.com/" target="_blank"><li class="menu_1">Site de CSS</li></a>
+    </ul>
+
+
+    <br>
+    <h1>Bem-Vindo a Página 5</h1>
+
+    <h2>Sumário</h2>
+    <ul>
+        <a href="#RWD"><li>Responsive Web Design</li></a>
+        <a href="#computercode"><li>Computercode</li></a>
+        <a href="#estilos"><li>Guia de estilos</li></a>
+        <a href="#entidades"><li>Entidades HTML</li></a>
+        <a href="#simbolos"><li>Símbolos HTML</li></a>
+        <a href="#emojis"><li>Emojis no HTML</li></a>
+        <a href="#codificacao"><li>Codificação HTML</li></a>
+        <a href="#codificacao_url"><li>Codificação de URL</li></a>
+        <a href="#xhtml"><li>HTML versus XHTML</li></a>
+    </ul>
+
+    <br><br><hr>
+
+    <h2 id="RWD">Responsive Web Design</h2>
+    <p>
+        O Responsive Web Design é sobre o uso de HTML e CSS para redimensionar, ocultar, encolher ou ampliar automaticamente um site, para que tenha uma boa aparencia em todos os dispositivos (desktops, tablets, celulares):
+    </p>
+
+    <h3>Configurando a janela de visualização</h3>
+    <p>
+        Para usarmos essa ferramenta presicamos adicionar a tag <b>&lt;meta&gt;</b> em todas as páginas da web.
+    </p>
+
+    <h4>Exemplo:</h4>
+    <p>
+        <b>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</b>
+    </p>
+    <p>
+        Isso definirá a janela de visualização da sua página, que fornecerá ao navegador instruções sobre como controlar as dimensões e o dimensionamento da página.
+    </p>
+
+    <h3>Imagens responsivas</h3>
+    <p>
+        São imagens que adaptam perfeitamente a qualquer tamanho de navegador.
+    </p>
+
+    <h4>Usando propriedade de largura</h4>
+    <p>
+        Se a propriedade <b>width</b> for definida como 100%, a imagem será responsiva e aumentará ou diminuirá.
+        Em alguns casos, será melhor usar a propriedade <b>max-width</b>, porque a imagem podem ser ampliada e perder a sua qualidade.
+    </p>
+
+    <h4>Usando <b>max-width</b></h4>
+    <p>
+        Se a propriedade for definida como 100%, a imagem será reduzida se necessário, mas nunca aumentará de tamanho para ser maior que o tamanho original.
+    </p>
+    
+    <h3>Mostrando imagens diferentes dependendo da largura do monitor</h3>
+    <p>
+        Para isso vamos usar o elemento <b>&lt;picture&gt;</b>, ele permite definirmos diferentes imagens para diferentes tamanhos de janela dos navegadores.
+    </p>
+    <picture>
+        <source srcset="Imagens\moto.png" media="(max-width: 600px)">
+        <source srcset="Imagens\carros.png" media="(max-width: 1500px)">
+        <source srcset="Imagens\Lampadas.png">
+        <img src="Imagens\Lampadas.png" alt="Lampadas">
+    </picture>
+
+    <h3>Tamanho de texto responsivo</h3>
+    <p>
+        O tamanho do texto pode ser definido com uma unidade "vw", que significa a "largura da jenala de visualização".
+    </p>
+    <p>
+        Dessa forma, o tamanho do texto seguirá o tamanho da janela do navegador.
+    </p>
+
+    <h1 style="font-size: 10vw;">Olá mundo</h1>
+
+    <h4>Exemplo:</h4>
+    <p>
+        <b>&lt; h1 style="font-size: 10vw;"&gt; Olá mundo &lt;/h1&gt;</b>
+    </p>
+
+    <p style="background-color: khaki; padding: 2vw;">
+        <strong>OBS:</strong> A janela de visualização é o tamanho da janela do navegador. 1vw=1% da largura da janela de visualização. Se a janela de visualização tiver 50 cm de largura, 1vw é 0,5 cm.
+    </p>
+
+    <h3>Consultas de mídia</h3>
+    <p>
+        Também é comum usar consultas de mídia em páginas da Web, podendo definir estilos completamente diferentes para diferentes tamanhos de navegador.
+    </p>
+    <p>
+        Exemplo: redimensione a janela do navegador para ver se os três elementos div abaixo serão exibidos horizontalmente em telas grande e empilhados verticalmente em telas pequenas.
+    </p>
+    <div class="tabulacao">
+        <div class="left-exemplo">
+            <p>Texto da esquerda</p>
+        </div>
+
+        <div class="main-exemplo">
+            <p>Texto do meio</p>
+        </div>
+
+        <div class="right-exemplo">
+            <p>Texto da esquerda</p>
+        </div>
+    </div>
+    
+    <br><br><br>
+
+    <h3>Páginas da Web responsivas</h3>
+    <p>
+        Uma página na Web responsiva deve ter uma boa aparencia em grandes telas de desktops e em pequenos celulares. Sempre devemos usar o <b>@media screen and (max-width: px)</b> para que em qualquer tela o seu site fique bem programado.
+    </p>
+    
+
+    <h3>Alguns frameworks que oferecem um design responsivo</h3>
+    <h4>W3.CSS</h4>
+    <p>
+        É uma estrutura do CSS moderna com suporte para desktops, tablet e design movel por padrão. <br>
+        Sendo menor e mais rápido do que estruturas semelhantes. Foi projetado para ser uma alternativa de alta qualidade ao Bootstrap.
+    </p>
+
+    <div class="header-w3">
+        <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Olá mundo</h1>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Bom dia, como vc está?</p>
+    </div>
+
+    <div class="formatacao">
+        <div class="left-w3">
+            <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">London</h2>
+            <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> London is the capital city of England.</p>
+            <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">It is the most populous city in the United Kingdom,
+            with a metropolitan area of over 13 million inhabitants. </p>
+        </div>
+
+        <div class="main-w3">
+            <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Paris</h2>
+            <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Paris is the capital of France.</p> 
+            <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">The Paris area is one of the largest population centers in Europe,
+            with more than 12 million inhabitants.</p>
+        </div>
+
+        <div class="right-w3">
+            <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Tokyo</h2>
+            <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Tokyo is the capital of Japan.</p>
+            <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">It is the center of the Greater Tokyo Area,
+            and the most populous metropolitan area in the world.</p>
+        </div>
+    </div>
+    <br/>
+    <h3>Bootstrap</h3>
+    <p>
+        Outra estrutura CSS popular para criar páginas da web responsivas.  
+    </p>
+    <hr>
+    <h2 id="computercode">Computercode</h2>
+    <p>
+        O HTML tem vários elementos para definir a entrada do usuário e o código do computador.
+    </p>
+
+    <code>
+        x = 2;
+        y = 1;
+        z = x + y;
+    </code>
+    
+    <h3>Elemento &lt;kbd&gt; para entrada do teclado</h3>
+    <p>
+        Usado para definir a entrada do teclado. O conteúdo interno é exibido na fonte monospace padrão do navegador.
+    </p>
+    <h4>Exemplo:</h4>
+    <p>
+        Para salvar documentos aperte <kbd>Ctrl + S</kbd>.
+    </p>
+    <p>
+        Junto com o &lt;kbd&gt; podemos usar uma borda para deixar melhor formatado.
+    </p>
+
+    <h3>Elemento &lt;samp&gt; para saída do programa</h3>
+    <p>
+        Para definir a saída de amostra de um programa, o conteúdo interno é exibido na fonte monospace padrão do navegador.
+    </p>
+
+    <h4>Exemplo:</h4>
+    <p>Mensagem do computador</p>
+    <p>
+        <samp>Arquivo não encontrado. <br>
+            Aperte F1 para continuar.</samp>
+    </p>
+
+    <h3>&lt;code&gt; código para computador</h3>
+    <p>
+        Este elemento não conserva espaços em branco e quebra de linhas, para resolvermos isso, usamos o &lt;pre&gt;.
+    </p>
+
+    <h4>Exemplo:</h4>
+    <pre>
+        <code>
+            x = 2;
+            y = 1;
+            z = x + y;
+        </code>
+    </pre>
+
+    <h3>Elemento &lt;var&gt;</h3>
+    <p>
+        Usado para definir uma variavel na programação ou em uma expressão matemática. O conteúdo dentro normalmente fica em itálico.
+    </p>
+
+    <h4>Exemplo:</h4>
+    <p>
+        A área do triangulo é: 1/2 <var>b</var> <var>x</var> <var>h</var>, onde <var>b</var> é a base, e <var>h</var> é a altura veritcal.
+    </p>
+
+    <h3>Resumo do Capítulo</h3>
+    <img src="Imagens\computercode.png" alt="Resumo de Computercode">
+
+    <hr>
+
+    <h2>Semântica</h2>
+    <p>
+        Elemento semânticos descrevem claramente seu significado para o navegador e o desenvolvedor. <br>
+        <strong>Não semânticos:</strong> <b>&lt;div&gt;</b> e <b>&lt;span&gt;</b> - não diz nada sobre seu conteúdo.
+        <strong>Semânticos:</strong> <b>&lt;form&gt;</b>, <b>&lt;table&gt;</b> e <b>&lt;article&gt;</b> - claramente define seu conteúdo.
+    </p>
+
+    <h3>Elementos semântico em HTML</h3>
+    <p>
+        Muitos sites contêm códigos HTML como: &lt;div id="nav"&gt; &lt;div class="header"&gt; &lt;div id="footer"&gt; para indicar navegação, cabeçalho e rodapé.
+    </p>
+    <p>
+        Em HTML tem varios elementos semânticos que são usados para definir partes de uma página da Web.
+    </p>
+
+    <ul>
+        <li>article</li>
+        <li>aside</li>
+        <li>details</li>
+        <li>figcaption</li>
+        <li>figure</li>
+        <li>footer</li>
+        <li>header</li>
+        <li>main</li>
+        <li>mark</li>
+        <li>nav</li>
+        <li>section</li>
+        <li>summary</li>
+        <li>time</li>
+    </ul>
+
+    <h3>Elemento section</h3>
+    <p>
+        O elemento section define a seção do documento.
+    </p>
+    <p>
+        De acordo com a documentação HTML e W3C: "Uma seção é um agrupamento temático de conteúdo, normalmente com título."
+    </p>
+    <p>
+        Exemplos de section:
+    </p>
+    <ul>
+        <li>Capítulos</li>
+        <li>Introdução</li>
+        <li>Novos itens</li>
+        <li>Informações de Contato</li>
+    </ul>
+
+    <p>
+        Uma página normalmente pode ser dividida em seções de Introdução, conteúdo e informações de contato.
+    </p>
+
+    <section>
+        <h3>Elemento article</h3>
+        <p>
+            Especifica conteúdo autocontido e independente.
+        </p>
+        <p>
+            Um artigo deve fazer sentido por si só e deve ser possível distribuí-lo independente do resto do site.
+        </p>
+        <p>
+            Exemplos de onde o &lt;articl&gt; pode ser usado:
+        </p>
+        <ul>
+            <li>Postagem de fóruns</li>
+            <li>Postagem de blogs</li>
+            <li>Comentários do usúario</li>
+            <li>Cartões de produto</li>
+            <li>Artigos de jornal</li>
+        </ul>
+    </section><br>
+
+    <section>
+        <h3>Elemento &lt;header&gt;</h3>
+        <p>
+            Ele serve de contêiner para conteúdo introdutório ou conjunto de links de navegação.
+        </p>
+        <p>
+            Geralmente contém:
+        </p>
+        <ul>
+            <li>Um ou mais elementos de título (&lt;h1&gt; - &lt;h6&gt;)</li>
+            <li>Logotipo ou ícone</li>
+            <li>Informações de autoria</li>
+        </ul>
+        <p>
+            <strong>OBS:</strong> você pode ter varios <b>header</b> dento da uma única página. Mas não pode estar contido em outros, como por exemplo, <b>footer</b>, <b>address</b> ou outro <b>header</b>.
+        </p>
+    </section><br>
+
+    <section>
+        <h3>Elemento &lt;footer&gt;</h3>
+        <p>
+            Define o rodapé para um documento ou seção, normalmente contém:
+        </p>
+        <ul>
+            <li>Informações de autoria</li>
+            <li>Informações sobre direitos autorais</li>
+            <li>Informações de Contato</li>
+            <li>Mada de site</li>
+            <li>Voltar aos links principais</li>
+            <li>Documento relacionado</li>
+        </ul>
+    </section><br>
+
+    <section>
+        <h3>Elemento &lt;nav&gt;</h3>
+        <p>
+            Defini um conjunto de links de navegação.
+        </p>
+        <div style="background-color: khaki; padding: 1vw;">
+            <p>
+                Nem todos os links devem esta no elemento <b>nav</b>. O <b>nav</b> destina-se apenas ao bloco principal de links de navegação.
+            </p>
+            <p>
+                Navegadores, como leitores de tela  para usuários com deficiência, podem usar este elemento para determinar se deve omitir a renderização inicial deste conteúdo.
+            </p>
+        </div>
+    </section><br>
+
+    <section>
+        <h3>Elemento &lt;aside&gt;</h3>
+        <p>
+            Este elemento define algum conteúdo além do conteúdo em que é colocado (como um barra lateral).
+        </p>
+        <p>
+            O <b>&lt;aside&gt; deve estar relacionado indiretamente ao conteúdo circundante.</b>
+        </p>
+    </section><br>
+
+    <section>
+        <h3>Elementos &lt;figure&gt; e &lt;figcaption&gt;</h3>
+        <p>
+            A tag &lt;figure&gt; especifica conteúdo independente, como ilustrações, diagramas, fotos, listagens de códigos, etc.
+        </p>
+        <p>
+            &lt;figcaption&gt; define um legenda para o elemento &lt;figure&gt;. &lt;figcaption&gt; pode ser colocado como primeiro ou último filho do &lt;figure&gt;.
+        </p>
+        <p>
+            O &lt;img&gt; define a imagem/ilustração real.
+        </p>
+    </section><br>
+
+    <section>
+        <h3>Por que elementos semânticos?</h3>
+        <p>
+            De acordo com W3C: "Uma Web semântica permite que os dados sejam compartilhados e reutilizados em aplicativos, empresas e comunidades."
+        </p>
+    </section><br>
+
+    <section>
+        <h3>Tag do elementos semânticos</h3>
+        <img src="Imagens\semantico.png" alt="Resumo das tags dos elementos semânticos">
+    </section> <br><hr>
+
+    <h2 id="estilos">Guia de estilos e convenções de codificações</h2>
+    <p>
+        Um código em HTML limpo, organizado, consistente torna mais fácil para outras pessoas ler e entender.
+    </p>
+    <h3>Sempre declare o tipo de documento</h3>
+    <p>
+        Sempre declare o tipo de documento na primeira linha. <br>
+        O tipo de documento correto para HTML é:
+    </p>
+    <p>
+        &lt;!DOCTYPE html&gt;
+    </p>
+
+    <section>
+        <h3>Use nomes de elementos em minúsculas</h3>
+        <p>
+            Html permite misturar letras maiúculas com minúsculas em nomes de elementos. No entanto, recomenda-se o uso de nomes com letras minúsculas, por que:
+        </p>
+        <ul>
+            <li>Misturar nomes em maiúsculas e minúsculas parece ruim</li>
+            <li>Os desenvolvedores normalmente usam nomes em letras minúsculas</li>
+            <li>Letras minúsculas parecem mais limpas</li>
+            <li>Letras minúsculas são mais fáceis de escrever</li>
+        </ul>
+    </section><br>
+
+    <section>
+        <h3>Sempre feche todos os elementos</h3>
+        <p>
+            Sempre que você abrir um <b>p</b> feche-o, isso tem que ser usado em todos os elementos.
+        </p>
+    </section><br>
+
+    <section>
+        <h3>Sempre cite valores de atributos</h3>
+        <p>
+            HTML permite valores sem aspas.
+        </p>
+        <p>
+            No entando recomenda-se, citar valores de atributos, por que:
+        </p>
+        <ul>
+            <li>Os desenvolvedores normalmente citam valores de atibutos</li>
+            <li>Os valores citados são mais fáceis de ler</li>
+            <li>Você DEVE usar aspas se o valor contiver espaços</li>
+        </ul>
+    </section><br>
+
+    <section>
+        <h3>Sempre especifique alt, largura e altura para imagens</h3>
+        <p>
+            Ao usarmos o alt ajudará caso a imagem não carregue. E usar o width e height fará com que reduza a tremulação, porque o navegador pode reservar espaço para a imagem antes de carregar.
+        </p>
+    </section> <br>
+
+    <section>
+        <h3>Espaços e sinais de igualdade</h3>
+        <p>
+            Usar menos espaço é mais fácil para ler e agrupar melhor as entidades.
+        </p>
+    </section><br>
+
+    <section>
+        <h3>Evite linhas de códigos longas</h3>
+        <p>
+            Não é conveniente rolar para a direita e para a esquerda para ler códigos HTML.
+        </p>
+    </section><br>
+
+    <section>
+        <h3>Linhas em branco e recuo</h3>
+        <p>
+            Não adicione linhas em branco, espaços ou recuo sem motivo.
+        </p>
+        <p>
+            Para facilitar a leitura, adicione linhas me branco para separar blocos de códigos grandes ou lógicos.
+        </p>
+        <p>
+            Para faciliatar a leitura, adicione dois espaços de recuo. Não Use a tecla <kbd>tab</kbd>.
+        </p>
+    </section><br>
+
+    <section>
+        <h3>Nunca pule o elemento &lt;title&gt;</h3>
+        <p>O title é obrigatorio em HTML</p>
+        <p>O conteúdo do título é muito importante para a otimização do mecanismo de pesquisa (SEO)! O título da página é usado pelos algoritmos do mecanismo de pesquisa para decidir a ordem ao listar as páginas nos resultados da pesquisa</p>
+        <p>O title:</p>
+        <ul>
+            <li>Define um título na barra de ferramentas do navegador</li>
+            <li>Fornece um título para a página quando ela é adicionada aos favoritos</li>
+            <li>Exibe um título para a página nos resultados do mecanismo de pesquisa</li>
+        </ul>
+    </section><br>
+
+    <section>
+        <h3>Omitir html e body</h3>
+        <p>Sempre adicione as tag html e body.</p>
+        <p>A não omitir dessas tags podem causar o mal funcionamento dos navegadores.</p>
+    </section><br>
+
+    <section>
+        <h3>Omitindo head?</h3>
+        <p>Deve ser adicionada igual as tags html e body</p>
+    </section><br>
+
+    <section>
+        <h3>Fechar os elementos HTML vazios</h3>
+        <p>É opcional fechar elementos vazios.</p>
+        <p>Se você esperar que um software XML / XHTML acesse sua página, mantanha a barra de fechamento (/), porque ela é necessária em XML e XHTML.</p>
+    </section><br>
+
+    <section>
+        <h3>Adicione o atributo lang</h3>
+        <p>Você deve sempre incluir o <b>lang</b> dentro do <b>html</b>, para declarar o idioma da página Web. Isso serve para auxiliar os mecanismos de pesquisa e navegadores.</p>
+    </section><br>
+
+    <section>
+        <h3>Meta Dados</h3>
+        <p>Para garantir a interpretação adequada e a indexação correta do mecanismo de pesquisa, o idioma e a codificação de caracteres devem ser definidos o mais cedo possível em um documento HTML: <br>
+        <b>&lt;meta charset="charset"&gt;</b></p>
+    </section><br>
+
+    <section>
+        <h3>Configurando a janela de visualização</h3>
+        <p>A janela de visualização deve ser sempre configurada para que possam acessar o seu site sem nenhum problema de formatação, tanto em celulares, desktops, tablets.</p>
+        <p><b>width=device-width</b> usado para definir a largura da página para seguir a lateral da tela do dispositivo (que irá varias dependendo do dispositivo)</p>
+        <p><b>inital-scale=1.0</b> define o nível de zoom inicial quando a página é carregada pela primeira vez pelo navegador.</p>
+    </section><br>
+
+    <section>
+        <h3>Usando folha de estilo</h3>
+        <p>Regras em CSS curtas podem ser escritas sem espaço.</p>
+        <p>Regras em CSS longas devem ser escritas em várias linhas</p>
+        <ul>
+            <li>Coloque o colchete de abertura na mesma linha do seletor</li>
+            <li>Use um espaço antes do colchete de abertura</li>
+            <li>Use dois espaços de indenteção</li>
+            <li>Use ponto-e-virgula após cada par de propriedade-valor, incluindo o último</li>
+            <li>Só use aspas entre valores se o valor contiver aspas</li>
+            <li>Coloque o colchetes de fechamento em um nova linhas, sem espaço à esquerda</li>
+        </ul>
+    </section> <br>
+
+    <section>
+        <h3>Carregando JavaScript / Acessando elementos com JavaScript</h3>
+        <h4>Carregando JavaScript</h4>
+        <p>Usamos uma sintaxe simples e interna para carregar o script (não precisa do atributo <b>type</b>)</p>
+        <p>&lt;script src="myscript.js"&gt;</p>
+        <h4>Acessando elementos com JavaScript</h4>
+        <p>Usar o código de uma forma desordenada pode resultar erros de JavaScript.</p>
+        <p>Pois como o JavaScript pode pegar o Id, neste caso você deve colocar o Id da forma correta, caso uma letra este maiúscula ou minúscula dará erro.</p>
+    </section><br>
+
+    <section>
+        <h3>Use nomes de arquivos em minúsculas</h3>
+        <p>Alguns sites não aceitam letras em maiúsculas e outros aceitam, para evitar que você tenha este tipo de problema em alguns sites, será recomendavel usar letras minúsculas.</p>
+    </section><br>
+
+    <section>
+        <h3>Extensões de arquivos</h3>
+        <p>Os arquivos HTML devem ter uma extensão <strong>.html</strong>(<strong>.htm</strong> também é permitido). Não existe diferença entre .htm para .html, ambos serão tratados como HTML por qualquer navegador.</p>
+        <p>Os arquivos CSS devem ter uma extensão <strong>.css</strong>.</p>
+        <p>Os arquivos JavaScript devem ter uma extensão <strong>.js</strong>.</p>
+    </section><br>
+
+    <section>
+        <h3>Nome de arquivos padrão</h3>
+        <p>Quando a URL não especifica um nome de arquivo no final (https:google.com/), o servidor apenas adiciona um nome de arquivo padrão, como "index.htm", "index.html", "default.htm" ou "defautl.html".</p>
+        <p>Se o seu servidor estiver configurado apenas com "index.html" como nome de arquivo padrão, seu arquivo deve ser nomeado "index.html" e não "default.html"</p>
+        <p>No entando, os servidores podem ser configurados com mais de um nome de arquivo padrão; normalmente você pode configurar quantos nomes de arquivo padrão desejar.</p>
+    </section><br>
+
+    <section>
+        <header>
+            <h2 id="entidades">Entidades HTML</h2>
+        </header>
+        <p>Alguns caracteres são reservados para HTML. Por exemplo: se você usar os sinais de maior (&lt;) ou o sinal de menos (&gt;) em seu texto, o navegador pode acabar misturando eles com tags.</p>
+        <p>As entidades de caracteres são usados para exibir caracteres reservados em HTML.</p>
+        <h4>Uma entidade HTML se parece com isso:</h4>
+        <pre><i>
+            &entity_name</i>;
+            OU 
+            <i>&#entidy_number;
+        </i></pre>
+        <p>Para escrevermos uma sinal de menor (&gt;), demos escrever: <strong>& gt;</strong> ou <strong>& #60;</strong>.</p>
+
+        <div style="background-color: khaki; padding: 1vw;">
+            <p><strong>Vantegem de usar um nome de entidade:</strong> O nome de uma entidade é fácil de lembrar.</p>
+            <p><strong>Desvantagem de usar um nome de entidade:</strong> Os navegadores podem não oferecer suporte a todos os nomes de entidade, mas o suporte para número de entidade é sempre bom.</p>
+        </div>
+
+        <h3>Espaços inquebrável</h3>
+        <p>Uma entidade comumente usada no HTML é o espaço sem quebra: <strong>& nbsp;</strong>. Este espaço não separável é um espaço que não se quebra em uma nova linha.</p>
+        <p>Duas palavras separadas por um espaço não separável ficarão grudadas (não quebrarão em um nova linha). Isso é útil quando quebrar as palavras pode ser perturbador.</p>
+        <h4>Exemplos:</h4>
+        <ul>
+            <li>§ &nbsp; 10</li>
+            <li>10 km &nbsp;/&nbsp;</li>
+            <li>22h</li>
+        </ul>
+        <p>Outro uso do espaço separável é evitar que o navegador truncem os espaços nas páginas HTML. Por exemplo, você coloca 10 espaços em um texto, o navegador irá retirar 9 deles. Para adicionar espaços reais ao seu texto, para isso você pode usar a entidade <strong>& nbsp;</strong>.</p>
+        <div style="background-color:khaki; padding:1vw;">
+        <p><strong>OBS:</strong> o hífen sem quebra (& # 8290;) é usado para definir um caracter de hífen (-) que não se divide em uma nova linhas.</p>
+        </div>
+
+        <h4>Algumas entidades</h4>
+        <img src="Imagens\entidades.png" alt="Algumas entidades úteis de caracters HTML">
+        <br><br>    
+
+        <div style="background-color: khaki; padding: 1vw;">
+            <p><strong>OBS:</strong> Os nomes das entidades diferenciam maiúsculas de minúsculas.</p>
+        </div>
+
+        <h3>Combinando Marcas Diacríticas</h3>
+        <p>Uma marca diacrítica é um "grifo" adicionado a uma letra.</p>
+        <p>Alguns sinais como grave ( ` ) e algudo ( ´ ) são chamdos de acentos. Essas marcas podem aparecer acima e abaixo de uma letra, dentro de uma letra e entre duas letras.</p>
+        <p>As marcas diacríticas podem ser usadas em combinação com caracteres alfanuméricos para produzir um caractere que não está presente no conjunto de caracteres (codificação) usado na página.</p>
+        <h4>Alguns exemplos:</h4>
+        <img src="Imagens\diacritca.png" alt="Algumas marcas diacrítica">
+    </section>
+
+    <section>
+        <h2 id="simbolos">Símbolos HTML</h2>
+        <h3>Entidade de Símbolos</h3>
+        <p>Símbolos que não estão presentes em seu teclado também podem ser adicionados usando entidades.</p>
+        <p>Muitos símbolos matemáticos, técnicos e monetários não estão presentes em um teclado normal. Para adicionarmos esses símbolos a uma página HTML, você pode usar o nome da entidade ou o número da entidade (uma referência decimal ou hexagonal) para símbolo.</p>
+        <h4>Alguns símbolos matemáticos suportados pelo HTML</h4>
+        <img src="Imagens\simbolos-matematicos.png" alt="Símbolos matemáticos que podem ser usados">
+        <h4>Algums letras gregas suportada pelo HTML</h4>
+        <img src="Imagens\letras-gregas.png" alt="Letras Gregas suportado pelo HTML">
+
+        <h4>Outras entidades suportadas pelo HTML</h4>
+        <img src="Imagens\outras-entidade.png" alt="Outras endidades suportada pelo HTML">
+    </section><br>
+
+    <hr>
+    <section>
+        <h2 id="emojis">Emojis no HTML</h2>
+        <p>Emojis são personagens do conjunto de caracteres UTF-8</p>
+        
+        <section>
+            <h3>O que são Emojis</h3>
+            <p>Podem parecer imagens ou icones, mas são letras (caracteres) do conjunto de caracteres UTF-8 (Unicode).</p>
+            <div class="mark">
+                <p>UTF-8 cobre quase todos os personagens e símbolos do mundo</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>O atributo do conjunto de caracteres HTML</h3>
+            <p>Para exibir uma página corretamente, um navegador deve conhecer o conjunto de caracteres usado na página. Para fazermos ele reconhecer usamos a tag <b>&lt;meta&gt;</b>.</p>
+            <p style="background-color: black; color: white;">
+                &lt;meta charset="UTF-8"&gt;
+            </p>
+        </section>
+
+        <section>
+            <h3>Personagens UTF-8</h3>
+            <p>Muitos caracteres UTF-8 não podem ser digitados no teclado, mas sempre podem ser selecionados usando números (chamados de números de entidade)</p>
+            <ul>
+                <li>A é 65</li>
+                <li>B é 66</li>
+                <li>C é 67</li>
+            </ul>
+            <h4>Exemplo explicado</h4>
+            <p>O <b>&lt;meta charset="UTF-8"&gt;</b> define o conjunto de caracteres.</p>
+            <p>Para permitir que o navegador entenda que você está exibindo um caractere, você deve iniciar o número da entidade com &# e terminar com ; (ponto-e-virgula).</p>
+        </section>
+
+        <section>
+            <h3>Personagens - Emoji</h3>
+            <p>Emojis também são caracteres UTF-8:</p>
+            <ul>
+                <li>&#128516 é 128516</li>
+                <li>&#128525 é 128525</li>
+                <li>&#128151 é 128151</li>
+            </ul>
+            <p>Como emoji são caracteres eles podem ser estilizados, copiados como qualquer outro caractere em HTML.</p>
+        </section>
+    </section><br>
+    
+    <hr>
+    <section>
+        <header>
+            <h2 id="codificacao">Codificação HTML (conjuntos de caracteres)</h2>
+        </header>
+        <p>Para exibir uma página corretamente, um navegador da web deve saber qual conjunto de caracteres usar.</p>
+
+        <section>
+            <h3>De ASCII para UTF-8</h3>
+            <p>ASCII foi o primeiro padrão de codificação de caracteres. O ASCII definiu 128 caracteres diferentes que podem ser usados na Internet: números (0-9), letras inglesas (AZ) e alguns caracteres especiais como ! $ + - ( ) @ &lt; &gt;.</p>
+            <p>ISO-8859-1 era o conjunto de caracteres padrão para HTML 4. Este conjunto de caracteres suportava 256 códigos de caracteres diferentes. HTML 4 também suporta UTF-8.</p>
+            <p>ANSI (Windows-1252) era o conjunto de caracteres originais do Windows. ANSI é idêntico ao ISO-8850-1, exceto que ANSI tem 32 caracteres extras.</p>
+            <p>A especificação HTML 5 incentiva os desenvolvedores da web a usar o conjunto de caracteres UTF-8, que cobre quase todos os caracteres e símbolos do mundo!</p>
+        </section>    
+    </section><br>
+
+    <hr>
+    <section>
+        <header>
+            <h2 id="codificacao_url">Codificação de URL</h2>
+        </header>
+        <p>URL é uma outra página para um endereço Web.</p>
+        <p>Uma URL pode ser composta de palavras (por exemplo, google.com) ou um endereço de protocolo da Internet (IP) (Por exemplo, 192.68.20.50).</p>
+        <p>A maioria das pessoas insere o nome ao navegador, porque os nomes são mais fáceis de lembrar do que os números.</p>
+
+        <section>
+            <h3>URL - Localizador Uniforme de Recursos</h3>
+            <p>Os navegadores Web solicitam páginas de serviços da Web usando URL.</p>
+            <p>Um Uniform Resource Locator (URL) é usado para entereçar um documento (ou outros dados) na Web.</p>
+            <p>Um endereço da Web como <a href="https://google.com/"> https://google.com segue estas regras de sintaxe:</a></p>
+            <div class="code">
+                <p>scheme://prefix.domain:port/path/filename</p>
+            </div>
+            <ul>
+                <li><strong>scheme - esquema</strong>: define o <strong>tipo</strong> de serviço da Internet (o mais comum é <strong>http ou https</strong></li>
+                <li><strong>prefix - prefixo</strong>: define um <strong>prefixo</strong> de domínio (o padrão para http é <strong>www</strong></li>
+                <li><strong>domain - domínio</strong>: define o <strong>nome de domínio</strong> da Internet (como  google.com)</li>
+                <li><strong>port - porta</strong>: define o <strong>número</strong> da <strong>porta</strong> no host (o padrão para http é <strong>80</strong>)</li>
+                <li><strong>path - caminho</strong>: define um <strong>caminho</strong> no servidor (se omitido: o diretório raiz do site)</li>
+                <li><strong>filename - nome do arquivo</strong>: define o nome de um documento ou recurso</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Esquema de URL comuns</h3>
+            <p>A tabela abaixo lista alguns esquemas comuns:</p>
+            <table>
+                <tr>
+                    <th>Scheme</th>
+                    <th>Short for</th>
+                    <th>Used for</th>
+                </tr>
+
+                <tr>
+                    <td>http</td>
+                    <td>Protocolo de trasnferência de Hipertexto</td>
+                    <td>Páginas da Web comum. Sem criptografia</td>
+                </tr>
+
+                <tr>
+                    <td>https</td>
+                    <td>Protocolo de trasnferência de Hipertexto seguro</td>
+                    <td>Páginas seguras da Web. Com criptografia</td>
+                </tr>
+
+                <tr>
+                    <td>ftp</td>
+                    <td>Protocolo de trasnferência de arquivos</td>
+                    <td>Download e upload de arquivos</td>
+                </tr>
+                
+                <tr>
+                    <td>file</td>
+                    <td></td>
+                    <td>Um arquivo no seu computador</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Codificação da URL</h3>
+            <p>Os URL só podem ser enviados pela Internet usando o conjunto de caracteres ASCII. Se um URL contém caracteres fora do conjunto ASCII, o URL deve ser convertido.</p>
+            <p>A codificação de URL converte caracteres não ASCII em um formato que pode ser transmitido pela Internet.</p>
+            <p>A codificação de URL substitui caracteres não ASCII por um "%" seguindo por dígitos hexadecimais.</p>
+            <p>Os URLs podem conter espaços. A codificaçao de URL pode normalmente substituir um espaço por um sinal de mais (+) ou % 20.</p>
+        </section>
+    </section><br>
+    
+    <hr>
+    <section>
+        <header>
+            <h2 id="xhtml">HTML vs XHTML</h2>
+        </header>
+        <p>XHTML é uma versão de HTML mais restrita e mais baseada em XML.</p>
+
+        <section>
+            <h3>O que é XHTML</h3>
+            <ul>
+                <li>XHTML está para E <strong>X</strong> tensible <strong>H</strong> Yper <strong>T</strong> ext <strong>M</strong> arkup <strong>L</strong> anguage</li>
+                <li>XHTML é uma versão de HTML mais restrita e baseada em XML</li>
+                <li>XHTML é HTML definido como um aplicativo XML</li>
+                <li>XHTML é compatível com todos os principais navegadores</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Por que XHTML?</h3>
+            <p>XML é uma linguagem de marcação em que todos os documentos devem ser marcados corretamente (ser "bem formatados").</p>
+            <p>O XHTML foi desenvolvido para tornar o HTML mais extensível e flexível para trabalhar com outros formatos de dados (como XML). Além disso, os navegadores ignoram os erros nas páginas HTML e tentam exibir o site mesmo se houver alguns erros de marcação. Portanto, o XHTML vem com um tratamento de erros muito mais rígido.</p>
+        </section>
+
+        <section>
+            <h3>As diferenças mais importantes do HTML</h3>
+            <ul>
+                <li>&lt;! DOCTYPE&gt; é <strong>obrigatório</strong></li>
+                <li>O atributo xmlns em &lt;html&gt; é <strong>obrigatório</strong></li>
+                <li>&lt;html&gt;, &lt;head&gt;, &lt;title&gt; e &lt;body&gt; são <strong>obrigatório</strong></li>
+                <li>Os elementos devem sempre ser <strong>alinhados de maneira adequada</strong></li>
+                <li>Os elementos devem estar sempre <strong>fechados</strong></li>
+                <li>Os elementos devem estar sempre em <strong>minúsculas</strong></li>
+                <li>Os nomes dos atributos devem sermpre estar em <strong>minúsculas</strong></li>
+                <li>Os valores dos atributos devem estar sempre entre <strong>aspas</strong></li>
+                <li>A minimização de atributos é <strong>proibida</strong></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>XHTML - &lt;!DOCTYPE...&gt; é obrigatório</h3>
+            <p>Um documento XHTML deve ter uma declaração XHTML &lt;!DOCTYPE&gt;.</p>
+            <p>Os elementos &lt;html&gt;, &lt;head&gt;, &lt;title&gt; e &lt;body&gt; também devem estar presentes, e o atributo xmlns em &lt;html&gt; deve especificar p namespace xml para o documento.</p>
+        </section>
+
+        <section>
+            <h3>Os elementos XHTML devem ser aninhados corretamente:</h3>
+            <p>&lt;b&gt;&lt;i&gt; Algum texto &lt;i&gt;&lt;b&gt;</p>
+        </section>
+
+        <section>
+            <h3>Os elementos devem ser sempre fechados</h3>
+        </section>
+
+        <section>
+            <h3>Os elementos vazios de XHTML devem ser sempre fechados</h3>
+            <ul>
+                <li>Uma quebra de linha: &lt;br /&gt;</li>
+                <li>Uma linha horzontal: &lt;hr /&gt;</li>
+                <li>Uma imagem: &lt;img src="path" alt="nome" /&gt;</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Os elementos sempre em letras minúsculas</h3>
+        </section>
+
+        <section>
+            <h3>Valores de atributos XHTML devem ser citados</h3>
+            <p>Em XHTML, os valores dos atributos sempre devem estar entre aspas.</p>
+        </section>
+
+        <section>
+            <h3>A minimização de atributos em XHTML é proibida</h3>
+        </section>
+    </section><br/>
+    <hr/>
+
+
+    <hr>
+    <address style="text-align: end, left; font-size: Smaller"><a href="pag_6.html">Próxima Página</a><br><a href="pag_4.html">Página Anterior</a></address>   
+
+
+    <div class="irtopo"><a href="pag_5.html">Topo</a></div>
+
+</body>
+</html>
