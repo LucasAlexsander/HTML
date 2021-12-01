@@ -15,185 +15,187 @@
 
     </head>
 
-    <body style="background-color: lightgrey";>
-
-        <hr>
+    <body>
         <!--Menu-->
-        <ul class="menu">
-            <a href="home.html"><li class="menu_1">Home</li></a>
-            <a href="index.html"><li class="menu_1">Primeira Página</li></a>
-            <a href="pag_2.html"><li class="menu_1">Segunda Página</li></a>
-            <a href="pag_3.html"><li class="menu_1">Terceira Página</li></a>
-            <a href="pag_4.html"><li class="menu_1">Quarta Página</li></a>
-            <a href="pag_5.html"><li class="menu_1">Quinta Página</li></a>
-            <a href="pag_6.html"><li class="menu_1">Sexta Página</li></a>
-            <a href=" https://www.maujor.com/" target="_blank"><li class="menu_1">Site de CSS</li></a>
-        </ul>
-    
-    
-    
-        <hr>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <a href="home.html"><li class="menu_1">Home</li></a>
+                    <a href="index.html"><li class="menu_1">Primeira Página</li></a>
+                    <a href="pag_2.html"><li class="menu_1">Segunda Página</li></a>
+                    <a href="pag_3.html"><li class="menu_1">Terceira Página</li></a>
+                    <a href="pag_4.html"><li class="menu_1">Quarta Página</li></a>
+                    <a href="pag_5.html"><li class="menu_1">Quinta Página</li></a>
+                    <a href="pag_6.html"><li class="menu_1">Sexta Página</li></a>
+                    <a href=" https://www.maujor.com/" target="_blank"><li class="menu_1">Site de CSS</li></a>
+                </ul>
+            </nav>
+        </header>
 
-        <h1 style="font-family: Cursive">Lucas A. B. Cruz</h1>
+        <div class="container">
+
+            <h1 style="font-family: Cursive">Lucas A. B. Cruz</h1>
+            
+            <hr>
+
+            <pre class="formatacao_cursive" style="text-align: center">Olá!<br>Tudo bem?<br>Seja bem-vindo ao meu site! <br></pre>
+
+            <div style="text-align: center;"><img id="a" src="Imagens\lofi-girl-lofi.gif" alt="Girl Study" style="background-position: right top;width:300px;height:300px; border: 6px solid black; border-radius: 50%; box-shadow: 0px 0px 20px rgb(54, 13, 13);"></div><br>
+
+            <div class="header-img">
+                <img src="Imagens\computer.jpg" alt="Computer" width="550" height="600">
+                <img src="Imagens\street.jpg" alt="Street" width="500" height="600" >
+                <img src="Imagens\people_seen_pc.jpg" alt="People" width="700" height="600">
+            </div>
+
+
+        <!--    <p id="formatacao_texto_2"> Link para o <sup><a href="https://www.w3schools.com"> w3schools</a></sup></p>
+            <hr> -->
+
+            <p class="formatacao_times"> Link para o <a href="https://www.google.com/" target="_blank"> Google</a></p>
+            <hr>
+
+            <!-- BookMarks -->
+            <h2><ins>Sumário Página 1</ins></h2>
+            <a href="#HTML"> <li>HTML</li></a><img src="Imagens\internet_icons.png" alt="Animation" style="float:right;width:700px;height:600px">
+            <a href="#Poema"> <li>Poema</li></a>
+            <a href="#Abreviacoes"> <li>Abreviações</li></a>
+            <a href="#Citacoes"> <li>Citações</li></a>
+            <a href="#Cores"> <li>Adicionando cores</li></a>
+            <a href="#CSS"> <li>O que é CSS</li> </a>
+            <a href="#inline_css"> <li>Inline CSS</li> </a>
+            <a href="#css_colors"> <li>CSS Colors, Fonts and Size</li> </a>
+            <a href="#css_border"> <li>CSS Border</li> </a>
+            <a href="#css_externo"> <li>Link para CSS externo</li> </a>
+
+            <!-- Quebra de linha e um risco na horizontal -->
+            <br><br><br> <hr>
+
+
+
+
+            <h2 id="HTML"><addr title="HyperText Markup Language"> HTML </addr> </h2>
+            <p class="formatacao_times" style="font-size: large"> <addrtitle="HyperText Markup Language"> HTML </addr> é o componente base da web. Isso quer dizer que
+                ele permite a construção de websites e a inserção de novos conteúdos, 
+                como imagens e vídeos, por meio dos hipertextos. </p>
+
+
+            <!-- Poema -->
+            <h2 id="Poema"><hr> Poema </h2>
+            <p><a href="https://fundacaotelefonicavivo.org.br/noticias/estudante-cria-projeto-que-une-poesia-e-programacao/" target="_blank"> <cite> Poesia Compilada </cite> - [R.R] & [X.X] </a></p>
+            <blockquote cite: https://leiturinha.com.br/blog/10-poemas-famosos-para-ler-com-as-criancas/><pre><p class="formatacao_times" style="font-size: large">
+                < p >
+                Dá um <mark> TAB </mark> e vai pra frente
+                <mark> BACKSPACE </mark> e vai pra traz
+                Quem quiser brincar com gente
+                Dá um <mark> ENTER </mark> e pede mais
+                < /p > </p></pre></blockquote>
+            <hr>
+
+
+            <!-- Resumo de algumas coisas de HTML -->
+            <h1 style="text-align: center"><ins> Resumo de <abbr title="HyperText Markup LanguageHTML"> HTML </abbr></ins> </h1>
+
+            <!-- Abreviações -->
+            <h2 id="Abreviacoes"> Abreviações: </h2>
+            <p><mark>< b > </mark> = bold text 
+            <mark> < strong > </mark> = Important text <br> <hr>
+            <mark> < i > </mark> italic = Italic text | 
+            <mark> < em > </mark> = Emphasized text <br> <hr>
+            <mark> < mark > </mark> = Marked text <br> <hr>
+            <mark> < small > </mark> = Smaller text |  
+            <mark> < del > </mark> = Deleted text <br> <hr>
+            <mark> < ins > </mark> = Inserted text |  
+            <mark> < sub > </mark> = Subscript text <br> <hr>
+            <mark> < sup > </mark>= Superscript text<br> <hr>
+            <mark> < br > </mark> = Broke the line<br> <hr>
+            <mark> < hr > </mark> = Used to separate content, and is most often displayed as a horizontal rule<br> <hr>
+            <mark> < pre > </mark> = Displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks<br></p> <hr>
+
+            <!-- Citações -->
+            <h2 id="Citacoes"> Citações em <abbr title="HyperText Markup Language"> HTML </abbr> </h2>
+            <p><mark> < blockquote > </mark> = Usado para citar um site, deixando o texto um pouco no meio<br> <hr>
+            <mark> < q > / Quotation Marks </mark> = Seria as aspas, e deixa o texto um pouco menor<br> <hr>
+            <mark> < abbr > / Abbriviation </mark> = Abreviação, usado em siglas. Quando passa o mouse em cima aparece o significado<br> <hr>
+            <mark> < address > </mark> = Usado para deixar informações do autor, como nome, número, etc<br> <hr>
+            <mark> < cite > </mark> = Destacar uma obra, deixando o nome dela em <i> italico </i><br> <hr>
+            <mark> < bdo > / Bi-Directional Override </mark> = Se o site suportar faz com que ele deixe as letras de traz pra frente<br> <hr>
+            <mark> Para adicionar dois atributos as tags </mark> = Usa-se o ";" depois do primeiro atributo;<hr> </p>
+
+
+            <h2 id="Cores"> Adicionando cores as coisas </h2>
+            <p>Podemos adicionar cor a quase tudo, nas letras, no background, nas bordas, etc. <br>
+            Existe 6 tipos de códigos que podem ser usados para adicionar essas cores, podendo ser a cor em sí mas inglês, <br>
+            <mark>RGB (red, blue, green), RGBA (red, blue, green, alpha), HEX, HSl</mark>: <br>
+            Para adicionarmos cor nas letras basta colocar <ins> style= "color: code" </ins> isso aparecerá a cor. <br>
+            Exemplo de cada um: <br>
+            <mark> Nome </mark>: style="color: red"<br>
+            <mark> RGB </mark>: style="color: (255, 0, 0)"<br>
+            <mark> RGBA </mark>: style="color: (255, 0, 0, 255)"<br>
+            <mark> HEX </mark>: style="color: #FF0000" | Onde varia de 0-255, 00-FF, sendo rr(red), gg(gree), bb(blue)<br>
+            <mark> HSL </mark>: style="color: (0, 100%, 50%)"<br> <br>
+            Os códigos das cores ficam fixos em todos os casos, mudando somente onde ele irá ser aplicado.<br>
+            Exemplos:<br>
+            <mark> background-color: </mark>: Para background<br>
+            <mark> border: tamanho tipo cor </mark>: Para as bordas <br>
+            <mark> style="color: " </mark>: Para as letras<br></p>
+            <hr>
+
+            <h2 id="CSS"> O que é <abbr title=" Cascading Style Sheets ">CSS </abbr> </h2>
+            <p>O Cascading Style Sheets (<abbr title="Cascading Style Sheets">CSS</abbr>) é uma "folha de estilo" composta por ?camadas? e utilizada para definir a 
+            apresentação (aparência) em páginas da internet que adotam para o seu desenvolvimento linguagens de marcação (como XML, HTML e XHTML).
+            Podendo ser usado para controlar a cor, fonte, tamanho do texto, espaço entre os elementos, como os elesmentos irão aparecer no layout, qual imagem vai aparecer no background ou a cor que será usada, e várias outras opções.<br>
+            <strong> Inline </strong>usamos <mark> style </mark> para atribuir valores; <br>
+            <strong> Internal </strong>usamos <mark> < style > </mark> dentro do elemento < head >; <br>
+            <strong> External </strong>usamos <mark> < link > </mark> elemento para link para o arquivo CSS. <br> </p>
+            <hr>
+            <h3 id="inline_css"> Inline <abbr title=" Cascading Style Sheets ">CSS </abbr> </h3>
+            <p><strong> Inline </strong>pode ser usando tanto no < p > ou no < h1 >.<br>
+            <strong> Internal </strong> usando dentro do elemento < head > criando uma aba < style >, onde você pode criar tags e adicionar atributos.<br>
+            <strong> External </strong> usado também dentro do elemento < head > onde você cria o < link > e adicionará dentro dele o rel="stylesheet" e logo em seguida o href="nome_do_arquivo" para importar o arquivo com o CSS-Style.<br></p>
+            <hr>
+
+            <h3 id="css_colors"> <abbr title=" Cascading Style Sheets ">CSS <abbr> Colors, Fonts and Size </h3>
+            <p> CSS <mark> color </mark> propriedade de texto para cor.<br>
+            O CSS <mark> font-family: </mark> propriedade para alterar a fonte. <br>
+            O CSS <mark> font-size: px</mark> propriedade para definir o tamanho da fonte. <br></p>
+            <hr>
+
+            <h3 id="css_border"> <abbr title=" Cascading Style Sheets ">CSS </abbr> Border </h3>
+            <p><mark> Border </mark> defini a borda dos elementos do CSS. <br>
+            <mark> Padding: px </mark> usado juntamente com border para definir o tamanho entre o texto e a borda. <br>
+            <mark> Margin: px </mark> outro elemento que será usado com o border, para definir o espaço fora da borda. <br></p>
+            <hr>
         
-        <hr>
+            <h3 id="css_externo"> Link para CSS externo </h3>
+            <p> <cite> Style Sheets </cite> pode ser usado como referenciado com URL completa ou com o path relativo para uma link da web.<br>
+            Exemplo: <br>
+            < link rel="stylesheet" href="https://www.w3schools.com/html/styles.css" >; <br>
+            < link rel="stylesheet" href="/html/styles.css" >; <br>
+            < link rel="stylesheet" href="styles.css" > <br></p>
 
-        <pre class="formatacao_cursive" style="text-align: center">Olá!<br>Tudo bem?<br>Seja bem-vindo ao meu site! <br></pre>
-
-        <div style="text-align: center"><img id="a" src="Imagens\lofi-girl-lofi.gif" alt="Girl Study" style="background-position: right top;width:300px;height:230px;"></div><br>
-
-        <img src="Imagens\computer.jpg" alt="Computer" width="550" height="600">
-        <img src="Imagens\street.jpg" alt="Street" width="500" height="600" >
-        <img src="Imagens\people_seen_pc.jpg" alt="People" width="700" height="600">
+            <hr>
+            <img src="Imagens\Resumo_imagens.png">
+            <hr>
 
 
-    <!--    <p id="formatacao_texto_2"> Link para o <sup><a href="https://www.w3schools.com"> w3schools</a></sup></p>
-        <hr> -->
-
-        <p class="formatacao_times"> Link para o <a href="https://www.google.com/" target="_blank"> Google</a></p>
-        <hr>
-
-        <!-- BookMarks -->
-        <h2><ins>Sumário Página 1</ins></h2>
-        <a href="#HTML"> <li>HTML</li></a><img src="Imagens\internet_icons.png" alt="Animation" style="float:right;width:700px;height:600px">
-        <a href="#Poema"> <li>Poema</li></a>
-        <a href="#Abreviacoes"> <li>Abreviações</li></a>
-        <a href="#Citacoes"> <li>Citações</li></a>
-        <a href="#Cores"> <li>Adicionando cores</li></a>
-        <a href="#CSS"> <li>O que é CSS</li> </a>
-        <a href="#inline_css"> <li>Inline CSS</li> </a>
-        <a href="#css_colors"> <li>CSS Colors, Fonts and Size</li> </a>
-        <a href="#css_border"> <li>CSS Border</li> </a>
-        <a href="#css_externo"> <li>Link para CSS externo</li> </a>
-
-        <!-- Quebra de linha e um risco na horizontal -->
-        <br><br><br> <hr>
+            <!-- Informações Finais -->
+            <address class="formatacao_times" style="text-align: end; font-size: Smaller; float: right">
+            Lucas Alexsander Barbosa Cruz<br>
+            E-mail: lucas10barbosa_@hotmail.com<br>
+            </address>
 
 
 
+            
+            <address class="formatacao_times" style="text-align: end, left; font-size: Smaller"><a href="pag_2.html">Próxima Página</a> <br>
+            <a href="home.html">Página Anterior</a></address>
 
-        <h2 id="HTML"><addr title="HyperText Markup Language"> HTML </addr> </h2>
-        <p class="formatacao_times" style="font-size: large"> <addrtitle="HyperText Markup Language"> HTML </addr> é o componente base da web. Isso quer dizer que
-            ele permite a construção de websites e a inserção de novos conteúdos, 
-            como imagens e vídeos, por meio dos hipertextos. </p>
-
-
-        <!-- Poema -->
-        <h2 id="Poema"><hr> Poema </h2>
-        <p><a href="https://fundacaotelefonicavivo.org.br/noticias/estudante-cria-projeto-que-une-poesia-e-programacao/" target="_blank"> <cite> Poesia Compilada </cite> - [R.R] & [X.X] </a></p>
-        <blockquote cite: https://leiturinha.com.br/blog/10-poemas-famosos-para-ler-com-as-criancas/><pre><p class="formatacao_times" style="font-size: large">
-            < p >
-            Dá um <mark> TAB </mark> e vai pra frente
-            <mark> BACKSPACE </mark> e vai pra traz
-            Quem quiser brincar com gente
-            Dá um <mark> ENTER </mark> e pede mais
-            < /p > </p></pre></blockquote>
-        <hr>
-
-
-        <!-- Resumo de algumas coisas de HTML -->
-        <h1 style="text-align: center"><ins> Resumo de <abbr title="HyperText Markup LanguageHTML"> HTML </abbr></ins> </h1>
-
-        <!-- Abreviações -->
-        <h2 id="Abreviacoes"> Abreviações: </h2>
-        <p><mark>< b > </mark> = bold text 
-           <mark> < strong > </mark> = Important text <br> <hr>
-           <mark> < i > </mark> italic = Italic text | 
-           <mark> < em > </mark> = Emphasized text <br> <hr>
-           <mark> < mark > </mark> = Marked text <br> <hr>
-           <mark> < small > </mark> = Smaller text |  
-           <mark> < del > </mark> = Deleted text <br> <hr>
-           <mark> < ins > </mark> = Inserted text |  
-           <mark> < sub > </mark> = Subscript text <br> <hr>
-           <mark> < sup > </mark>= Superscript text<br> <hr>
-           <mark> < br > </mark> = Broke the line<br> <hr>
-           <mark> < hr > </mark> = Used to separate content, and is most often displayed as a horizontal rule<br> <hr>
-           <mark> < pre > </mark> = Displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks<br></p> <hr>
-
-        <!-- Citações -->
-        <h2 id="Citacoes"> Citações em <abbr title="HyperText Markup Language"> HTML </abbr> </h2>
-        <p><mark> < blockquote > </mark> = Usado para citar um site, deixando o texto um pouco no meio<br> <hr>
-        <mark> < q > / Quotation Marks </mark> = Seria as aspas, e deixa o texto um pouco menor<br> <hr>
-        <mark> < abbr > / Abbriviation </mark> = Abreviação, usado em siglas. Quando passa o mouse em cima aparece o significado<br> <hr>
-        <mark> < address > </mark> = Usado para deixar informações do autor, como nome, número, etc<br> <hr>
-        <mark> < cite > </mark> = Destacar uma obra, deixando o nome dela em <i> italico </i><br> <hr>
-        <mark> < bdo > / Bi-Directional Override </mark> = Se o site suportar faz com que ele deixe as letras de traz pra frente<br> <hr>
-        <mark> Para adicionar dois atributos as tags </mark> = Usa-se o ";" depois do primeiro atributo;<hr> </p>
-
-
-        <h2 id="Cores"> Adicionando cores as coisas </h2>
-        <p>Podemos adicionar cor a quase tudo, nas letras, no background, nas bordas, etc. <br>
-        Existe 6 tipos de códigos que podem ser usados para adicionar essas cores, podendo ser a cor em sí mas inglês, <br>
-        <mark>RGB (red, blue, green), RGBA (red, blue, green, alpha), HEX, HSl</mark>: <br>
-        Para adicionarmos cor nas letras basta colocar <ins> style= "color: code" </ins> isso aparecerá a cor. <br>
-        Exemplo de cada um: <br>
-        <mark> Nome </mark>: style="color: red"<br>
-        <mark> RGB </mark>: style="color: (255, 0, 0)"<br>
-        <mark> RGBA </mark>: style="color: (255, 0, 0, 255)"<br>
-        <mark> HEX </mark>: style="color: #FF0000" | Onde varia de 0-255, 00-FF, sendo rr(red), gg(gree), bb(blue)<br>
-        <mark> HSL </mark>: style="color: (0, 100%, 50%)"<br> <br>
-        Os códigos das cores ficam fixos em todos os casos, mudando somente onde ele irá ser aplicado.<br>
-        Exemplos:<br>
-        <mark> background-color: </mark>: Para background<br>
-        <mark> border: tamanho tipo cor </mark>: Para as bordas <br>
-        <mark> style="color: " </mark>: Para as letras<br></p>
-        <hr>
-
-        <h2 id="CSS"> O que é <abbr title=" Cascading Style Sheets ">CSS </abbr> </h2>
-        <p>O Cascading Style Sheets (<abbr title="Cascading Style Sheets">CSS</abbr>) é uma "folha de estilo" composta por ?camadas? e utilizada para definir a 
-        apresentação (aparência) em páginas da internet que adotam para o seu desenvolvimento linguagens de marcação (como XML, HTML e XHTML).
-        Podendo ser usado para controlar a cor, fonte, tamanho do texto, espaço entre os elementos, como os elesmentos irão aparecer no layout, qual imagem vai aparecer no background ou a cor que será usada, e várias outras opções.<br>
-        <strong> Inline </strong>usamos <mark> style </mark> para atribuir valores; <br>
-        <strong> Internal </strong>usamos <mark> < style > </mark> dentro do elemento < head >; <br>
-        <strong> External </strong>usamos <mark> < link > </mark> elemento para link para o arquivo CSS. <br> </p>
-        <hr>
-        <h3 id="inline_css"> Inline <abbr title=" Cascading Style Sheets ">CSS </abbr> </h3>
-        <p><strong> Inline </strong>pode ser usando tanto no < p > ou no < h1 >.<br>
-        <strong> Internal </strong> usando dentro do elemento < head > criando uma aba < style >, onde você pode criar tags e adicionar atributos.<br>
-        <strong> External </strong> usado também dentro do elemento < head > onde você cria o < link > e adicionará dentro dele o rel="stylesheet" e logo em seguida o href="nome_do_arquivo" para importar o arquivo com o CSS-Style.<br></p>
-        <hr>
-
-        <h3 id="css_colors"> <abbr title=" Cascading Style Sheets ">CSS <abbr> Colors, Fonts and Size </h3>
-        <p> CSS <mark> color </mark> propriedade de texto para cor.<br>
-        O CSS <mark> font-family: </mark> propriedade para alterar a fonte. <br>
-        O CSS <mark> font-size: px</mark> propriedade para definir o tamanho da fonte. <br></p>
-        <hr>
-
-        <h3 id="css_border"> <abbr title=" Cascading Style Sheets ">CSS </abbr> Border </h3>
-        <p><mark> Border </mark> defini a borda dos elementos do CSS. <br>
-        <mark> Padding: px </mark> usado juntamente com border para definir o tamanho entre o texto e a borda. <br>
-        <mark> Margin: px </mark> outro elemento que será usado com o border, para definir o espaço fora da borda. <br></p>
-        <hr>
-    
-        <h3 id="css_externo"> Link para CSS externo </h3>
-        <p> <cite> Style Sheets </cite> pode ser usado como referenciado com URL completa ou com o path relativo para uma link da web.<br>
-        Exemplo: <br>
-        < link rel="stylesheet" href="https://www.w3schools.com/html/styles.css" >; <br>
-        < link rel="stylesheet" href="/html/styles.css" >; <br>
-        < link rel="stylesheet" href="styles.css" > <br></p>
-
-        <hr>
-        <img src="Imagens\Resumo_imagens.png">
-        <hr>
-
-
-        <!-- Informações Finais -->
-        <address class="formatacao_times" style="text-align: end; font-size: Smaller; float: right">
-        Lucas Alexsander Barbosa Cruz<br>
-        E-mail: lucas10barbosa_@hotmail.com<br>
-        </address>
-
-
+            
 
         
-        <address class="formatacao_times" style="text-align: end, left; font-size: Smaller"><a href="pag_2.html">Próxima Página</a> <br>
-        <a href="home.html">Página Anterior</a></address>
-
-        
-
-    
-        <div class="irtopo"><a href="index.html">Topo</a></div>    
-      
+            <div class="irtopo"><a href="index.html">Topo</a></div>    
+    </div>
     </body>
 
 </html>

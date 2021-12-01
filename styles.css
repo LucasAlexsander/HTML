@@ -3,10 +3,44 @@
 /* Place your CSS styles in this file */
 
 /* Fontes de texto */
+
+
+header nav ul {
+    display: flex;
+
+}
+
+body {
+    margin: 0;
+    background-color: lightgrey;
+}
 h1 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+}
+
+.container {
+    width: 1440px;
+    margin: auto;
+}
+.container hr {
+    opacity: 0.5;
+}
+
+.header-img {
+    display: flex;
+    justify-content: center;    
+}
+.header-img img {
+    margin-right: 15px;
+    border: 4px solid grey;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(54, 13, 13);
+}
+
+.header-img img:last-child {
+    margin-right: 0px;
 }
 
 #formatacao_cursive {
@@ -128,7 +162,12 @@ a:hover {
 .menu {
     list-style-type: none;
     overflow: hidden;
-    background-color: #333333;    
+    height: 100px;
+    background-color: #333333;   
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .menu_1 {
@@ -138,14 +177,21 @@ a:hover {
 .menu_1 {
     display:grid;
     color: white;
-    text-align: right;
-    padding: 16px;
+    text-align: center;
+    padding: 33px 15px;
     text-decoration: none;
-    font-size: x-large;    
+    font-size: 25px;   
+    
+}
+.menu_1 a {
+    height: auto;
 }
 
 .menu_1:hover {
     background-color: grey;
+}
+.menu_1:last-child {
+    margin-right: 20px;
 }
 
 /*Layout*/
